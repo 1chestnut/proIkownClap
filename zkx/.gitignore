@@ -1,0 +1,31 @@
+# 大文件目录
+CLAP/data/
+CLAP/model/
+iknow-audio/data/
+
+# 压缩包文件
+*.tar.gz
+*.zip
+*.7z
+
+# 编辑器配置
+.vscode/
+.idea/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 环境文件
+.env
+venv/
+env/
+
+# 模型权重文件
+*.bin
+*.pth
+*.pt
+*.ckpt
+*.pkl

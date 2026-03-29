@@ -1,0 +1,16 @@
+{
+    "job_id": "TFVpYwo2",
+    "output_folder": "results/",
+    "results_csv_file": "results/results.csv",
+    "models_folder": "KGE_models/",
+    "model_name": "RotatE",
+    "triples_path": "../AKG_dataset/AKG_pruned.tsv",
+    "triples_test_path": "../AKG_dataset/AKG_test.tsv",
+    "triple_verification": false,
+    "batch_size": 4096,
+    "embedding_dim": 256,
+    "learning_rate": 0.001,
+    "num_epochs": 1000,
+    "relations_to_filter": [],
+    "conf_id": "001"
+}

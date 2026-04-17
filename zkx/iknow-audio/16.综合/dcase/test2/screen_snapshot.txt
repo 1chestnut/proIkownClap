@@ -1,0 +1,24 @@
+Starting DCASE test2: Baseline / iKnow / Full2Hop / Selective2Hop
+Device: cuda
+Prompt policy: baseline label-only, iKnow uses pure single-hop concat without To
+p-P, 2-hop uses LLM prompts with concat fallback
+Valid hop1 relations: ['indicates', 'described by', 'used for', 'associated with
+ environment', 'has parent', 'is instance of']
+Valid hop2 relations: ['indicates', 'described by', 'used for', 'associated with
+ environment', 'has parent', 'is instance of']
+DCASE test2:   1%|Ž                             | 4/368 [00:18<27:15,  4.49s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

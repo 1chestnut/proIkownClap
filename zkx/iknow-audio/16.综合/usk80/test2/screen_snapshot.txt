@@ -1,0 +1,24 @@
+Starting US8K test2: Baseline / iKnow / Full2Hop / Selective2Hop
+Device: cuda
+Prompt policy: baseline label-only, iKnow uses pure single-hop concat without To
+p-P, 2-hop uses LLM prompts with concat fallback
+Valid hop1 relations: ['overlaps with', 'occurs in', 'associated with environmen
+t', 'localized in', 'used for', 'part of scene']
+Valid hop2 relations: ['overlaps with', 'part of scene', 'used for']
+US8K test2:   0%|                           | 3/8732 [00:18<15:17:12,  6.30s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

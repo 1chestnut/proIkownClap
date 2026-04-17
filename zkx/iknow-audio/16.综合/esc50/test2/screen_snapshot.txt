@@ -1,0 +1,24 @@
+Starting ESC50 test2: Baseline / iKnow / Full2Hop / Selective2Hop
+Device: cuda
+Prompt policy: baseline label-only, iKnow uses pure single-hop concat without To
+p-P, 2-hop uses LLM prompts with concat fallback
+Valid hop1 relations: ['belongs to class', 'has parent', 'perceived as', 'event
+composed of', 'has children']
+Valid hop2 relations: ['belongs to class', 'has parent', 'event composed of', 'h
+as children']
+ESC50 test2:   0%|                           | 4/2000 [00:19<2:41:16,  4.85s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

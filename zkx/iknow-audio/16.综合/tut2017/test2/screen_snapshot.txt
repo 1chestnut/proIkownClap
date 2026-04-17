@@ -1,0 +1,24 @@
+Starting TUT2017 test2: Baseline / iKnow / Full2Hop / Selective2Hop
+Device: cuda
+Prompt policy: baseline label-only, iKnow uses pure single-hop concat without To
+p-P, 2-hop uses LLM prompts with concat fallback
+Valid hop1 relations: ['is variant of', 'has parent', 'scene contains', 'event c
+omposed of', 'described by']
+Valid hop2 relations: ['is variant of', 'has parent', 'described by', 'event com
+posed of']
+TUT2017 test2:   0%|                                   | 0/4680 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

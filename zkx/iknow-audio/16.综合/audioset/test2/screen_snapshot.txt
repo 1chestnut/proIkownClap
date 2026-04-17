@@ -1,0 +1,24 @@
+Starting AudioSet test2: Baseline / iKnow / Full2Hop / Selective2Hop
+Device: cuda
+Prompt policy: baseline label-only, iKnow uses pure single-hop concat without To
+p-P, 2-hop uses LLM prompts with concat fallback
+Valid hop1 relations: ['belongs to class', 'has parent', 'is a type of', 'has ch
+ildren']
+Valid hop2 relations: ['belongs to class', 'has parent', 'is a type of', 'has ch
+ildren']
+AudioSet test2:   0%|                      | 4/17141 [00:14<15:09:11,  3.18s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

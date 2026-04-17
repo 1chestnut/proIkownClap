@@ -1,0 +1,24 @@
+Starting DCASE test1: baseline / 1-hop / full 2-hop / selective 2-hop
+Device: cuda
+Prompt policy: baseline label-only, 1-hop concat, 2-hop uses LLM prompts with co
+ncat fallback
+Valid relations: ['indicates', 'described by', 'used for', 'associated with envi
+ronment', 'has parent', 'is instance of']
+DCASE test1:   0%|                                      | 0/368 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

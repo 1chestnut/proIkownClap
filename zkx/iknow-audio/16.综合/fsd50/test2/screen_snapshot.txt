@@ -1,0 +1,24 @@
+Starting FSD50 test2: Baseline / iKnow / Full2Hop / Selective2Hop
+Device: cuda
+Prompt policy: baseline label-only, iKnow uses pure single-hop concat without To
+p-P, 2-hop uses LLM prompts with concat fallback
+Valid hop1 relations: ['belongs to class', 'has parent', 'is a type of']
+Valid hop2 relations: ['belongs to class', 'has parent', 'is a type of']
+FSD50 test2:   0%|                          | 8/10231 [00:18<6:05:15,  2.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

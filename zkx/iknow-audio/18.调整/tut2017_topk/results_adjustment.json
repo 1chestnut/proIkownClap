@@ -1,0 +1,91 @@
+{
+  "reference": {
+    "completed": true,
+    "total_samples": 4680,
+    "metrics": {
+      "Baseline": {
+        "Hit@1": 39.44444444444444,
+        "Hit@3": 74.27350427350427,
+        "Hit@5": 91.83760683760683,
+        "MRR": 59.75030851152646
+      },
+      "iKnow": {
+        "Hit@1": 44.059829059829056,
+        "Hit@3": 81.02564102564102,
+        "Hit@5": 92.15811965811966,
+        "MRR": 64.05637281759077
+      },
+      "Full2Hop": {
+        "Hit@1": 48.69658119658119,
+        "Hit@3": 80.17094017094017,
+        "Hit@5": 91.83760683760683,
+        "MRR": 66.39774440896235
+      },
+      "Ours": {
+        "Hit@1": 48.717948717948715,
+        "Hit@3": 80.38461538461539,
+        "Hit@5": 91.83760683760683,
+        "MRR": 66.44973871095667
+      },
+      "Selective2Hop_OriginalAgg": {
+        "Hit@1": 53.098290598290596,
+        "Hit@3": 81.43162393162393,
+        "Hit@5": 91.83760683760683,
+        "MRR": 69.26312902434697
+      },
+      "Selective2Hop_NoLLM": {
+        "Hit@1": 44.35897435897436,
+        "Hit@3": 79.61538461538461,
+        "Hit@5": 92.15811965811966,
+        "MRR": 64.05545706667503
+      }
+    },
+    "stats": {
+      "Baseline": {
+        "avg_prompts": 1.0,
+        "avg_time_ms": 13.071015961149818
+      },
+      "iKnow": {
+        "avg_prompts": 47.25021367521367,
+        "avg_time_ms": 341.92443270968573
+      },
+      "Full2Hop": {
+        "avg_prompts": 456.94358974358977,
+        "avg_time_ms": 3185.3342114350735
+      },
+      "Ours": {
+        "avg_prompts": 63.50811965811966,
+        "avg_time_ms": 455.90346832560675,
+        "hop2_activation_sample": 0.425,
+        "hop2_activation_candidate": 0.09444444444444444
+      },
+      "Selective2Hop_OriginalAgg": {
+        "avg_prompts": 63.50811965811966,
+        "avg_time_ms": 455.81996980895343,
+        "hop2_activation_sample": 0.425,
+        "hop2_activation_candidate": 0.09444444444444444
+      },
+      "Selective2Hop_NoLLM": {
+        "avg_prompts": 108.81068376068376,
+        "avg_time_ms": 768.8230885399712,
+        "hop2_activation_sample": 0.7333333333333333,
+        "hop2_activation_candidate": 0.21799145299145298
+      }
+    }
+  },
+  "adjusted": {
+    "metrics": {
+      "Hit@1": 49.465811965811966,
+      "Hit@3": 80.47008547008548,
+      "Hit@5": 93.31196581196582,
+      "MRR": 67.01047118835581
+    },
+    "stats": {
+      "avg_prompts": 94.14444444444445,
+      "avg_time_ms": 722.9217600109231,
+      "hop2_activation_sample": 0.5735042735042735,
+      "hop2_activation_candidate": 0.0829059829059829
+    },
+    "top_k": 8
+  }
+}

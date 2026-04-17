@@ -1,0 +1,4 @@
+Starting ESC50 diagnostic: strict short-template LLM prompt bank v2
+Loading local Qwen from: /data/zkx/zkx/iknow-audio/data/model/千问
+Building strict short prompt bank across 587 entries
+Resume ESC50 eval from sample index: 0

@@ -1,0 +1,13 @@
+START PY SCHED GPU1 Fri Apr 17 20:28:18 2026
+START_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/audioset Fri Apr 17 20:28:18 2026
+START_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0307/audioset Fri Apr 17 20:28:18 2026
+START PY SCHED GPU1 Fri Apr 17 20:34:53 2026
+START_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/audioset Fri Apr 17 20:34:53 2026
+START_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0307/audioset Fri Apr 17 20:34:53 2026
+END_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0307/audioset rc=0 Sat Apr 18 10:51:29 2026
+START_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/tut2017 Sat Apr 18 10:51:29 2026
+END_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/audioset rc=0 Sat Apr 18 11:05:50 2026
+START_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0307/tut2017 Sat Apr 18 11:05:50 2026
+END_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/tut2017 rc=0 Sat Apr 18 16:19:39 2026
+END_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0307/tut2017 rc=0 Sat Apr 18 16:48:16 2026
+DONE PY SCHED GPU1 Sat Apr 18 16:48:16 2026

@@ -1,0 +1,93 @@
+{
+  "metrics": {
+    "Baseline": {
+      "Hit@1": 91.10000000000001,
+      "Hit@3": 96.75,
+      "Hit@5": 97.65,
+      "MRR": 94.10549431018471
+    },
+    "iKnow": {
+      "Hit@1": 91.3,
+      "Hit@3": 96.85000000000001,
+      "Hit@5": 97.65,
+      "MRR": 94.29716097685137
+    },
+    "Full2Hop": {
+      "Hit@1": 92.0,
+      "Hit@3": 96.85000000000001,
+      "Hit@5": 97.65,
+      "MRR": 94.66632764351804
+    },
+    "Selective2Hop_OriginalAgg": {
+      "Hit@1": 87.5,
+      "Hit@3": 96.45,
+      "Hit@5": 97.65,
+      "MRR": 92.0679943101847
+    },
+    "Selective2Hop_Ours": {
+      "Hit@1": 92.05,
+      "Hit@3": 96.85000000000001,
+      "Hit@5": 97.65,
+      "MRR": 94.69966097685138
+    },
+    "OracleSample": {
+      "Hit@1": 92.65,
+      "Hit@3": 96.89999999999999,
+      "Hit@5": 97.65,
+      "MRR": 95.02882764351804
+    },
+    "OracleCandidate": {
+      "Hit@1": 93.85,
+      "Hit@3": 97.2,
+      "Hit@5": 97.65,
+      "MRR": 95.73966097685138
+    }
+  },
+  "stats": {
+    "Baseline": {
+      "avg_prompts": 1.0,
+      "avg_time_ms": 11.73085355758667
+    },
+    "iKnow": {
+      "avg_prompts": 47.54,
+      "avg_time_ms": 353.99210250377655
+    },
+    "Full2Hop": {
+      "avg_prompts": 398.284,
+      "avg_time_ms": 2856.6905034780502
+    },
+    "Selective2Hop_OriginalAgg": {
+      "avg_prompts": 57.915,
+      "avg_time_ms": 427.8932522535324,
+      "hop2_activation_sample": 0.45,
+      "hop2_activation_candidate": 0.1293
+    },
+    "Selective2Hop_Ours": {
+      "avg_prompts": 57.915,
+      "avg_time_ms": 428.2836571931839,
+      "hop2_activation_sample": 0.45,
+      "hop2_activation_candidate": 0.1293
+    },
+    "OracleSample": {
+      "avg_prompts": 57.915,
+      "avg_time_ms": 428.836531996727,
+      "hop2_activation_sample": 0.45,
+      "hop2_activation_candidate": 0.1293,
+      "route_choose_orig": 0.314
+    },
+    "OracleCandidate": {
+      "avg_prompts": 57.915,
+      "avg_time_ms": 428.836531996727,
+      "hop2_activation_sample": 0.45,
+      "hop2_activation_candidate": 0.1293,
+      "route_choose_orig": 0.1664
+    }
+  },
+  "meta": {
+    "oracle_type": "sample_and_candidate_upper_bound",
+    "head_a": "Selective2Hop_OriginalAgg",
+    "head_b": "Selective2Hop_Ours",
+    "skipped_count": 0,
+    "top_k": 5
+  }
+}

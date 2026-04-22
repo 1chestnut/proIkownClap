@@ -1,0 +1,65 @@
+{
+  "metrics": {
+    "Baseline": {
+      "Hit@1": 13.771161003721936,
+      "Hit@3": 25.363188858206264,
+      "Hit@5": 32.06867571136991,
+      "MRR": 23.00815652710768
+    },
+    "iKnow": {
+      "Hit@1": 13.723136030735983,
+      "Hit@3": 26.509785088245884,
+      "Hit@5": 32.93312522511706,
+      "MRR": 23.358404236609626
+    },
+    "Full2Hop": {
+      "Hit@1": 14.39548565253932,
+      "Hit@3": 27.104094128947054,
+      "Hit@5": 33.71953415776204,
+      "MRR": 23.994416780400563
+    },
+    "Selective2Hop_OriginalAgg": {
+      "Hit@1": 13.693120422619762,
+      "Hit@3": 26.4977788449994,
+      "Hit@5": 32.903109617000844,
+      "MRR": 23.31420436120013
+    },
+    "Selective2Hop_Repulsive": {
+      "Hit@1": 13.753151638852204,
+      "Hit@3": 26.4977788449994,
+      "Hit@5": 32.94513146836355,
+      "MRR": 23.33483367935773
+    }
+  },
+  "stats": {
+    "Baseline": {
+      "avg_prompts": 1.0,
+      "avg_time_ms": 28.28151960163389
+    },
+    "iKnow": {
+      "avg_prompts": 48.94753271701285,
+      "avg_time_ms": 408.57603598906223
+    },
+    "Full2Hop": {
+      "avg_prompts": 273.1329091127386,
+      "avg_time_ms": 2119.5707289965617
+    },
+    "Selective2Hop_OriginalAgg": {
+      "avg_prompts": 88.28490815223917,
+      "avg_time_ms": 708.7947323279644,
+      "hop2_activation_sample": 0.995377596350102,
+      "hop2_activation_candidate": 0.45298355144675234
+    },
+    "Selective2Hop_Repulsive": {
+      "avg_prompts": 88.28490815223917,
+      "avg_time_ms": 710.1826992966946,
+      "hop2_activation_sample": 0.995377596350102,
+      "hop2_activation_candidate": 0.45298355144675234
+    }
+  },
+  "meta": {
+    "module_path": "/data/zkx/zkx/iknow-audio/30.repulsive_rest/audioset/audioset_rep_base.py",
+    "repulsive_beta": 0.35,
+    "repulsive_margin": 0.01
+  }
+}

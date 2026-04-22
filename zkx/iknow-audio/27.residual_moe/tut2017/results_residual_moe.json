@@ -1,0 +1,72 @@
+{
+  "metrics": {
+    "Baseline": {
+      "Hit@1": 40.19230769230769,
+      "Hit@3": 74.8076923076923,
+      "Hit@5": 92.008547008547,
+      "MRR": 60.0879197369582
+    },
+    "iKnow": {
+      "Hit@1": 44.27350427350427,
+      "Hit@3": 80.38461538461539,
+      "Hit@5": 92.41452991452992,
+      "MRR": 64.01130191034036
+    },
+    "Full2Hop": {
+      "Hit@1": 50.74786324786324,
+      "Hit@3": 80.04273504273505,
+      "Hit@5": 92.008547008547,
+      "MRR": 67.40593967997815
+    },
+    "Selective2Hop_OriginalAgg": {
+      "Hit@1": 53.58974358974359,
+      "Hit@3": 81.68803418803418,
+      "Hit@5": 92.008547008547,
+      "MRR": 69.61071175975022
+    },
+    "Selective2Hop_StaticAlpha": {
+      "Hit@1": 50.76923076923077,
+      "Hit@3": 80.34188034188034,
+      "Hit@5": 92.008547008547,
+      "MRR": 67.47609637513483
+    },
+    "Selective2Hop_ResidualMoE": {
+      "Hit@1": 53.05555555555556,
+      "Hit@3": 81.43162393162393,
+      "Hit@5": 92.008547008547,
+      "MRR": 69.28272030675876
+    }
+  },
+  "stats": {
+    "Baseline": {
+      "avg_prompts": 1.0,
+      "avg_time_ms": 13.300156440490332
+    },
+    "iKnow": {
+      "avg_prompts": 47.30897435897436,
+      "avg_time_ms": 348.82095323668585
+    },
+    "Full2Hop": {
+      "avg_prompts": 457.55747863247865,
+      "avg_time_ms": 3249.5020390066325
+    },
+    "Selective2Hop_OriginalAgg": {
+      "avg_prompts": 64.14401709401709,
+      "avg_time_ms": 468.89492456729596,
+      "hop2_activation_sample": 0.42072649572649573,
+      "hop2_activation_candidate": 0.09474358974358973
+    },
+    "Selective2Hop_StaticAlpha": {
+      "avg_prompts": 64.14401709401709,
+      "avg_time_ms": 468.90226047263184,
+      "hop2_activation_sample": 0.42072649572649573,
+      "hop2_activation_candidate": 0.09474358974358973
+    },
+    "Selective2Hop_ResidualMoE": {
+      "avg_prompts": 64.14401709401709,
+      "avg_time_ms": 469.25601882812305,
+      "hop2_activation_sample": 0.42072649572649573,
+      "hop2_activation_candidate": 0.09474358974358973
+    }
+  }
+}

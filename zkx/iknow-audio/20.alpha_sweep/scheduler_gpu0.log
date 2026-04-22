@@ -1,0 +1,22 @@
+START SCHED GPU0 2026年 04月 17日 星期五 20:21:09 CST
+===== START /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0408_escfix/esc50 2026年 04月 17日 星期五 20:21:09 CST =====
+===== START /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/fsd50 2026年 04月 17日 星期五 20:21:09 CST =====
+START SCHED GPU0 2026年 04月 17日 星期五 20:22:01 CST
+===== START /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0408_escfix/esc50 2026年 04月 17日 星期五 20:22:01 CST =====
+===== START /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/fsd50 2026年 04月 17日 星期五 20:22:01 CST =====
+===== END /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0408_escfix/esc50 2026年 04月 17日 星期五 20:26:39 CST =====
+===== START /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0307/fsd50 2026年 04月 17日 星期五 20:26:39 CST =====
+===== END /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/fsd50 2026年 04月 17日 星期五 20:26:39 CST =====
+===== START /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/dcase 2026年 04月 17日 星期五 20:26:39 CST =====
+===== END /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0408_escfix/esc50 2026年 04月 17日 星期五 20:26:41 CST =====
+===== START /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0307/fsd50 2026年 04月 17日 星期五 20:26:41 CST =====
+===== END /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/fsd50 2026年 04月 17日 星期五 20:26:41 CST =====
+===== START /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/dcase 2026年 04月 17日 星期五 20:26:41 CST =====
+===== END /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/dcase 2026年 04月 17日 星期五 20:27:50 CST =====
+===== START /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0307/dcase 2026年 04月 17日 星期五 20:27:50 CST =====
+===== END /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0307/fsd50 2026年 04月 17日 星期五 20:27:51 CST =====
+===== START /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0307/dcase 2026年 04月 17日 星期五 20:27:51 CST =====
+===== END /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/dcase 2026年 04月 17日 星期五 20:27:51 CST =====
+===== END /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0307/fsd50 2026年 04月 17日 星期五 20:27:55 CST =====
+===== END /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0307/dcase 2026年 04月 17日 星期五 20:29:21 CST =====
+DONE SCHED GPU0 2026年 04月 17日 星期五 20:29:21 CST

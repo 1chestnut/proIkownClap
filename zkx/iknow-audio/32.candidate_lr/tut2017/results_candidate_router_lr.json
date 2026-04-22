@@ -1,0 +1,115 @@
+{
+  "metrics": {
+    "Baseline": {
+      "Hit@1": 40.17094017094017,
+      "Hit@3": 74.31623931623932,
+      "Hit@5": 91.92307692307692,
+      "MRR": 60.1569204774333
+    },
+    "iKnow": {
+      "Hit@1": 44.25213675213675,
+      "Hit@3": 80.98290598290599,
+      "Hit@5": 92.24358974358975,
+      "MRR": 64.15572491373773
+    },
+    "Full2Hop": {
+      "Hit@1": 50.10683760683761,
+      "Hit@3": 80.0,
+      "Hit@5": 91.92307692307692,
+      "MRR": 67.229926175439
+    },
+    "Selective2Hop_OriginalAgg": {
+      "Hit@1": 54.29487179487179,
+      "Hit@3": 82.47863247863248,
+      "Hit@5": 91.9017094017094,
+      "MRR": 70.02301734353016
+    },
+    "Selective2Hop_Ours": {
+      "Hit@1": 50.19230769230769,
+      "Hit@3": 80.25641025641026,
+      "Hit@5": 91.92307692307692,
+      "MRR": 67.36988344039626
+    },
+    "Selective2Hop_CandidateRouter": {
+      "Hit@1": 52.88461538461539,
+      "Hit@3": 80.42735042735043,
+      "Hit@5": 91.92307692307692,
+      "MRR": 68.73882930934214
+    }
+  },
+  "stats": {
+    "Baseline": {
+      "avg_prompts": 1.0,
+      "avg_time_ms": 14.126271518886599
+    },
+    "iKnow": {
+      "avg_prompts": 47.25726495726496,
+      "avg_time_ms": 442.4361239131699
+    },
+    "Full2Hop": {
+      "avg_prompts": 457.13824786324784,
+      "avg_time_ms": 4146.723040709128
+    },
+    "Selective2Hop_OriginalAgg": {
+      "avg_prompts": 64.0051282051282,
+      "avg_time_ms": 598.5668882345542,
+      "hop2_activation_sample": 0.42457264957264956,
+      "hop2_activation_candidate": 0.09482905982905983,
+      "alpha_mean": 0.5102551165070289
+    },
+    "Selective2Hop_Ours": {
+      "avg_prompts": 64.0051282051282,
+      "avg_time_ms": 598.4078864765983,
+      "hop2_activation_sample": 0.42457264957264956,
+      "hop2_activation_candidate": 0.09482905982905983,
+      "alpha_mean": 0.5102551165070289
+    },
+    "Selective2Hop_CandidateRouter": {
+      "avg_prompts": 64.0051282051282,
+      "avg_time_ms": 1196.9747747111523,
+      "hop2_activation_sample": 0.42457264957264956,
+      "hop2_activation_candidate": 0.09482905982905983,
+      "alpha_mean": 0.5102551165070289,
+      "route_choose_orig": 0.2719230769230769
+    }
+  },
+  "meta": {
+    "router_type": "candidate_lr",
+    "head_a": "Selective2Hop_OriginalAgg",
+    "head_b": "Selective2Hop_Ours",
+    "features": [
+      "baseline_top1",
+      "baseline_margin",
+      "entropy",
+      "hop2_activation_rate",
+      "prompt_count_log1p",
+      "base_i",
+      "orig_minus_base_i",
+      "ours_minus_base_i"
+    ],
+    "n_folds": 5,
+    "cand_margin": 0.01,
+    "default_close_margin": 0.01,
+    "diagnostics": {
+      "candidate_disagreement_accuracy": 0.7833258134055247,
+      "prob_low_ratio": 0.43665714142477563,
+      "prob_mid_ratio": 0.09304657341956184,
+      "prob_high_ratio": 0.1856419511706021,
+      "feature_importance_mean": [
+        0.838833825447032,
+        0.16481969278844538,
+        0.37953475333731135,
+        0.12606467444492755,
+        0.2935163232160066,
+        2.3518456042023854,
+        3.0103698157012104,
+        4.14993588025873
+      ],
+      "threshold_mean": 0.54
+    },
+    "mixed_preference_ratio": 0.839957264957265,
+    "candidate_disagreement_count": 19947,
+    "trainable_candidate_ratio": 0.8524358974358974,
+    "skipped_count": 0
+  }
+}

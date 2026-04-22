@@ -1,0 +1,13 @@
+START PY SCHED GPU2 Fri Apr 17 20:28:18 2026
+START_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/usk80 Fri Apr 17 20:28:18 2026
+START_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0307/usk80 Fri Apr 17 20:28:18 2026
+START PY SCHED GPU2 Fri Apr 17 20:34:53 2026
+START_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/usk80 Fri Apr 17 20:34:53 2026
+START_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0307/usk80 Fri Apr 17 20:34:53 2026
+END_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0307/usk80 rc=0 Sat Apr 18 10:13:27 2026
+START_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/esc50 Sat Apr 18 10:13:27 2026
+END_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/usk80 rc=0 Sat Apr 18 10:14:17 2026
+START_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0307/esc50 Sat Apr 18 10:14:17 2026
+END_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0307/esc50 rc=0 Sat Apr 18 12:14:54 2026
+END_JOB /data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/esc50 rc=0 Sat Apr 18 12:25:05 2026
+DONE PY SCHED GPU2 Sat Apr 18 12:25:05 2026

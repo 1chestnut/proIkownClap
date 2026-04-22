@@ -1,0 +1,9 @@
+{
+  "gpu": 2,
+  "jobs": [
+    "/data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/usk80",
+    "/data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0307/usk80",
+    "/data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_035075/esc50",
+    "/data/zkx/zkx/iknow-audio/20.alpha_sweep/alpha_0307/esc50"
+  ]
+}

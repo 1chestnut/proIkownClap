@@ -1,0 +1,119 @@
+{
+  "metrics": {
+    "Baseline": {
+      "Hit@1": 91.10000000000001,
+      "Hit@3": 96.75,
+      "Hit@5": 97.65,
+      "MRR": 94.10549431018471
+    },
+    "iKnow": {
+      "Hit@1": 91.3,
+      "Hit@3": 96.85000000000001,
+      "Hit@5": 97.65,
+      "MRR": 94.29716097685137
+    },
+    "Full2Hop": {
+      "Hit@1": 92.0,
+      "Hit@3": 96.85000000000001,
+      "Hit@5": 97.65,
+      "MRR": 94.66632764351804
+    },
+    "Selective2Hop_OriginalAgg": {
+      "Hit@1": 87.5,
+      "Hit@3": 96.45,
+      "Hit@5": 97.65,
+      "MRR": 92.0679943101847
+    },
+    "Selective2Hop_Ours": {
+      "Hit@1": 92.05,
+      "Hit@3": 96.85000000000001,
+      "Hit@5": 97.65,
+      "MRR": 94.69966097685138
+    },
+    "Selective2Hop_RankAwareRouter": {
+      "Hit@1": 91.4,
+      "Hit@3": 96.85000000000001,
+      "Hit@5": 97.65,
+      "MRR": 94.36632764351805
+    }
+  },
+  "stats": {
+    "Baseline": {
+      "avg_prompts": 1.0,
+      "avg_time_ms": 12.421989917755127
+    },
+    "iKnow": {
+      "avg_prompts": 47.54,
+      "avg_time_ms": 358.82411110401154
+    },
+    "Full2Hop": {
+      "avg_prompts": 398.284,
+      "avg_time_ms": 2887.351438164711
+    },
+    "Selective2Hop_OriginalAgg": {
+      "avg_prompts": 57.915,
+      "avg_time_ms": 432.8112692832947,
+      "hop2_activation_sample": 0.45,
+      "hop2_activation_candidate": 0.1293,
+      "alpha_mean": 0.5035517170220614
+    },
+    "Selective2Hop_Ours": {
+      "avg_prompts": 57.915,
+      "avg_time_ms": 432.87656116485596,
+      "hop2_activation_sample": 0.45,
+      "hop2_activation_candidate": 0.1293,
+      "alpha_mean": 0.5035517170220614
+    },
+    "Selective2Hop_RankAwareRouter": {
+      "avg_prompts": 57.915,
+      "avg_time_ms": 865.6878304481506,
+      "hop2_activation_sample": 0.45,
+      "hop2_activation_candidate": 0.1293,
+      "alpha_mean": 0.5035517170220614,
+      "route_choose_orig": 0.2677083333333334
+    }
+  },
+  "meta": {
+    "router_type": "candidate_rankaware_lr",
+    "head_a": "Selective2Hop_OriginalAgg",
+    "head_b": "Selective2Hop_Ours",
+    "features": [
+      "baseline_top1",
+      "baseline_margin",
+      "entropy",
+      "hop2_activation_rate",
+      "prompt_count_log1p",
+      "base_i",
+      "orig_minus_base_i",
+      "ours_minus_base_i"
+    ],
+    "n_folds": 5,
+    "rank_margin": 0.005,
+    "default_close_margin": 0.01,
+    "diagnostics": {
+      "candidate_disagreement_accuracy": 0.8917225950782998,
+      "prob_low_ratio": 0.5458612975391499,
+      "prob_mid_ratio": 0.021476510067114093,
+      "prob_high_ratio": 0.3422818791946309,
+      "feature_importance_mean": [
+        2.127221816758456,
+        0.575958255138451,
+        0.3195838315687361,
+        0.24598771890123775,
+        0.2664120304837324,
+        3.618065415566112,
+        1.8935808473448197,
+        2.2042098580846146
+      ],
+      "threshold_mean": 0.55,
+      "top1_corrected_ratio": 0.003
+    },
+    "mixed_preference_ratio": 0.692,
+    "candidate_disagreement_count": 4470,
+    "trainable_candidate_ratio": 0.745,
+    "trainable_sample_ratio": 0.9815,
+    "true_gap_improved_ratio": 0.7475,
+    "key_top": 3,
+    "skipped_count": 0
+  }
+}

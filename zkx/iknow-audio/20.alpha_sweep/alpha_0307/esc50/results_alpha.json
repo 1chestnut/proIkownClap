@@ -1,0 +1,48 @@
+{
+  "metrics": {
+    "Baseline": {
+      "Hit@1": 91.10000000000001,
+      "Hit@3": 96.75,
+      "Hit@5": 97.65,
+      "MRR": 94.10549431018471
+    },
+    "iKnow": {
+      "Hit@1": 91.3,
+      "Hit@3": 96.85000000000001,
+      "Hit@5": 97.65,
+      "MRR": 94.29716097685137
+    },
+    "Full2Hop": {
+      "Hit@1": 91.45,
+      "Hit@3": 96.89999999999999,
+      "Hit@5": 97.65,
+      "MRR": 94.40382764351804
+    },
+    "Selective2Hop": {
+      "Hit@1": 91.5,
+      "Hit@3": 96.85000000000001,
+      "Hit@5": 97.65,
+      "MRR": 94.44132764351805
+    }
+  },
+  "stats": {
+    "Baseline": {
+      "avg_prompts": 1.0,
+      "avg_time_ms": 12.052116751670837
+    },
+    "iKnow": {
+      "avg_prompts": 47.54,
+      "avg_time_ms": 354.1639301776886
+    },
+    "Full2Hop": {
+      "avg_prompts": 398.284,
+      "avg_time_ms": 2855.4182093143463
+    },
+    "Selective2Hop": {
+      "avg_prompts": 57.915,
+      "avg_time_ms": 428.05883979797363,
+      "hop2_activation_sample": 0.45,
+      "hop2_activation_candidate": 0.1293
+    }
+  }
+}

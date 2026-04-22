@@ -1,0 +1,93 @@
+{
+  "metrics": {
+    "Baseline": {
+      "Hit@1": 40.149572649572654,
+      "Hit@3": 75.49145299145299,
+      "Hit@5": 92.02991452991452,
+      "MRR": 60.31142023930486
+    },
+    "iKnow": {
+      "Hit@1": 44.294871794871796,
+      "Hit@3": 81.06837606837607,
+      "Hit@5": 92.41452991452992,
+      "MRR": 64.07517346139142
+    },
+    "Full2Hop": {
+      "Hit@1": 50.51282051282051,
+      "Hit@3": 80.74786324786325,
+      "Hit@5": 92.02991452991452,
+      "MRR": 67.56961112249573
+    },
+    "Selective2Hop_OriginalAgg": {
+      "Hit@1": 54.166666666666664,
+      "Hit@3": 82.13675213675214,
+      "Hit@5": 91.96581196581197,
+      "MRR": 70.01212231500693
+    },
+    "Selective2Hop_Ours": {
+      "Hit@1": 50.76923076923077,
+      "Hit@3": 81.04700854700855,
+      "Hit@5": 92.02991452991452,
+      "MRR": 67.78186183474645
+    },
+    "Selective2Hop_HardRouter": {
+      "Hit@1": 53.73931623931624,
+      "Hit@3": 82.15811965811966,
+      "Hit@5": 91.98717948717949,
+      "MRR": 69.81019923808385
+    }
+  },
+  "stats": {
+    "Baseline": {
+      "avg_prompts": 1.0,
+      "avg_time_ms": 13.954867307956402
+    },
+    "iKnow": {
+      "avg_prompts": 47.225641025641025,
+      "avg_time_ms": 366.61641312460614
+    },
+    "Full2Hop": {
+      "avg_prompts": 456.7576923076923,
+      "avg_time_ms": 3411.949556098025
+    },
+    "Selective2Hop_OriginalAgg": {
+      "avg_prompts": 64.20405982905983,
+      "avg_time_ms": 493.50320701925165,
+      "hop2_activation_sample": 0.42799145299145297,
+      "hop2_activation_candidate": 0.0961111111111111,
+      "alpha_mean": 0.51048708248979
+    },
+    "Selective2Hop_Ours": {
+      "avg_prompts": 64.20405982905983,
+      "avg_time_ms": 493.96696742783246,
+      "hop2_activation_sample": 0.42799145299145297,
+      "hop2_activation_candidate": 0.0961111111111111,
+      "alpha_mean": 0.51048708248979
+    },
+    "Selective2Hop_HardRouter": {
+      "avg_prompts": 64.20405982905983,
+      "avg_time_ms": 973.5153071391277,
+      "hop2_activation_sample": 0.42799145299145297,
+      "hop2_activation_candidate": 0.0961111111111111,
+      "alpha_mean": 0.51048708248979,
+      "route_choose_orig": 0.9666666666666667
+    }
+  },
+  "meta": {
+    "router_type": "hard_switch_mlp",
+    "head_a": "Selective2Hop_OriginalAgg",
+    "head_b": "Selective2Hop_Ours",
+    "features": [
+      "baseline_top1",
+      "baseline_margin",
+      "originalagg_gain",
+      "ours_gain"
+    ],
+    "n_folds": 5,
+    "hidden_dim": 8,
+    "dropout": 0.2,
+    "epochs": 80,
+    "learning_rate": 0.01,
+    "skipped_count": 0
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "metrics": {
+    "Baseline": {
+      "Hit@1": 40.02136752136752,
+      "Hit@3": 75.34188034188034,
+      "Hit@5": 91.9017094017094,
+      "MRR": 60.17832316069496
+    },
+    "iKnow": {
+      "Hit@1": 44.18803418803419,
+      "Hit@3": 80.74786324786325,
+      "Hit@5": 92.3076923076923,
+      "MRR": 64.11652693223206
+    },
+    "Full2Hop": {
+      "Hit@1": 50.06410256410256,
+      "Hit@3": 80.87606837606837,
+      "Hit@5": 91.9017094017094,
+      "MRR": 67.32575905813086
+    },
+    "Selective2Hop_OriginalAgg": {
+      "Hit@1": 52.77777777777778,
+      "Hit@3": 81.30341880341881,
+      "Hit@5": 91.9017094017094,
+      "MRR": 69.15731176468356
+    },
+    "Selective2Hop_StaticAlpha": {
+      "Hit@1": 50.256410256410255,
+      "Hit@3": 81.08974358974359,
+      "Hit@5": 91.9017094017094,
+      "MRR": 67.48637159374339
+    },
+    "Selective2Hop_SigmoidMoE": {
+      "Hit@1": 53.162393162393165,
+      "Hit@3": 82.39316239316238,
+      "Hit@5": 91.9017094017094,
+      "MRR": 69.50132885870066
+    }
+  },
+  "stats": {
+    "Baseline": {
+      "avg_prompts": 1.0,
+      "avg_time_ms": 13.07102885001745
+    },
+    "iKnow": {
+      "avg_prompts": 47.248504273504274,
+      "avg_time_ms": 353.8335789472629
+    },
+    "Full2Hop": {
+      "avg_prompts": 457.0525641025641,
+      "avg_time_ms": 3299.4138425232
+    },
+    "Selective2Hop_OriginalAgg": {
+      "avg_prompts": 63.1258547008547,
+      "avg_time_ms": 469.1604858280247,
+      "hop2_activation_sample": 0.4247863247863248,
+      "hop2_activation_candidate": 0.09354700854700854
+    },
+    "Selective2Hop_StaticAlpha": {
+      "avg_prompts": 63.1258547008547,
+      "avg_time_ms": 469.1390391088959,
+      "hop2_activation_sample": 0.4247863247863248,
+      "hop2_activation_candidate": 0.09354700854700854
+    },
+    "Selective2Hop_SigmoidMoE": {
+      "avg_prompts": 63.1258547008547,
+      "avg_time_ms": 469.3073244685801,
+      "hop2_activation_sample": 0.4247863247863248,
+      "hop2_activation_candidate": 0.09354700854700854
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "metrics": {
+    "Baseline": {
+      "Hit@1": 40.085470085470085,
+      "Hit@3": 75.1923076923077,
+      "Hit@5": 91.49572649572649,
+      "MRR": 60.154834066693056
+    },
+    "iKnow": {
+      "Hit@1": 43.73931623931624,
+      "Hit@3": 80.10683760683762,
+      "Hit@5": 91.96581196581197,
+      "MRR": 63.68149259335157
+    },
+    "Full2Hop": {
+      "Hit@1": 49.465811965811966,
+      "Hit@3": 80.17094017094017,
+      "Hit@5": 91.49572649572649,
+      "MRR": 66.88382267068164
+    },
+    "Selective2Hop_OriginalAgg": {
+      "Hit@1": 53.73931623931624,
+      "Hit@3": 81.21794871794872,
+      "Hit@5": 91.47435897435898,
+      "MRR": 69.52647631333528
+    },
+    "Selective2Hop_Ours": {
+      "Hit@1": 49.61538461538461,
+      "Hit@3": 80.40598290598291,
+      "Hit@5": 91.49572649572649,
+      "MRR": 67.02912181598079
+    },
+    "OracleSample": {
+      "Hit@1": 59.508547008547005,
+      "Hit@3": 84.67948717948718,
+      "Hit@5": 91.49572649572649,
+      "MRR": 73.43617309803207
+    },
+    "OracleCandidate": {
+      "Hit@1": 75.85470085470085,
+      "Hit@3": 87.43589743589743,
+      "Hit@5": 91.49572649572649,
+      "MRR": 83.16587395273291
+    }
+  },
+  "stats": {
+    "Baseline": {
+      "avg_prompts": 1.0,
+      "avg_time_ms": 13.325494324040209
+    },
+    "iKnow": {
+      "avg_prompts": 47.24786324786325,
+      "avg_time_ms": 366.34351504154694
+    },
+    "Full2Hop": {
+      "avg_prompts": 456.9991452991453,
+      "avg_time_ms": 3415.3171833763777
+    },
+    "Selective2Hop_OriginalAgg": {
+      "avg_prompts": 63.92542735042735,
+      "avg_time_ms": 492.0462851340954,
+      "hop2_activation_sample": 0.4235042735042735,
+      "hop2_activation_candidate": 0.09499999999999999
+    },
+    "Selective2Hop_Ours": {
+      "avg_prompts": 63.92542735042735,
+      "avg_time_ms": 492.33471073656,
+      "hop2_activation_sample": 0.4235042735042735,
+      "hop2_activation_candidate": 0.09499999999999999
+    },
+    "OracleSample": {
+      "avg_prompts": 63.92542735042735,
+      "avg_time_ms": 493.3125331870511,
+      "hop2_activation_sample": 0.4235042735042735,
+      "hop2_activation_candidate": 0.09499999999999999,
+      "route_choose_orig": 0.4579059829059829
+    },
+    "OracleCandidate": {
+      "avg_prompts": 63.92542735042735,
+      "avg_time_ms": 493.3125331870511,
+      "hop2_activation_sample": 0.4235042735042735,
+      "hop2_activation_candidate": 0.09499999999999999,
+      "route_choose_orig": 0.2020940170940171
+    }
+  },
+  "meta": {
+    "oracle_type": "sample_and_candidate_upper_bound",
+    "head_a": "Selective2Hop_OriginalAgg",
+    "head_b": "Selective2Hop_Ours",
+    "skipped_count": 0,
+    "top_k": 5
+  }
+}

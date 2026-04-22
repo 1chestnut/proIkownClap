@@ -1,0 +1,65 @@
+{
+  "metrics": {
+    "Baseline": {
+      "Hit@1": 57.62877529078292,
+      "Hit@3": 79.5718893558792,
+      "Hit@5": 86.24767862379043,
+      "MRR": 70.31139329754355
+    },
+    "iKnow": {
+      "Hit@1": 58.684390577656146,
+      "Hit@3": 80.69592415208679,
+      "Hit@5": 87.65516567295475,
+      "MRR": 71.28138373470978
+    },
+    "Full2Hop": {
+      "Hit@1": 63.766982699638355,
+      "Hit@3": 83.28609129117388,
+      "Hit@5": 88.55439350992083,
+      "MRR": 74.71441671636296
+    },
+    "Selective2Hop_OriginalAgg": {
+      "Hit@1": 61.98807545694458,
+      "Hit@3": 80.29518131169974,
+      "Hit@5": 86.58977617046232,
+      "MRR": 72.82166071031769
+    },
+    "Selective2Hop_Repulsive": {
+      "Hit@1": 62.04672075065976,
+      "Hit@3": 80.39292346789169,
+      "Hit@5": 86.68751832665428,
+      "MRR": 72.83822926418249
+    }
+  },
+  "stats": {
+    "Baseline": {
+      "avg_prompts": 1.0,
+      "avg_time_ms": 11.93596820143378
+    },
+    "iKnow": {
+      "avg_prompts": 42.510409539634445,
+      "avg_time_ms": 332.73807749721664
+    },
+    "Full2Hop": {
+      "avg_prompts": 227.95797087283745,
+      "avg_time_ms": 1712.1508636032775
+    },
+    "Selective2Hop_OriginalAgg": {
+      "avg_prompts": 55.367217280813215,
+      "avg_time_ms": 430.4365510057813,
+      "hop2_activation_sample": 0.9983383833447366,
+      "hop2_activation_candidate": 0.35237350535952827
+    },
+    "Selective2Hop_Repulsive": {
+      "avg_prompts": 55.367217280813215,
+      "avg_time_ms": 431.83362305706146,
+      "hop2_activation_sample": 0.9983383833447366,
+      "hop2_activation_candidate": 0.35237350535952827
+    }
+  },
+  "meta": {
+    "module_path": "/data/zkx/zkx/iknow-audio/30.repulsive_rest/fsd50/fsd_rep_base.py",
+    "repulsive_beta": 0.35,
+    "repulsive_margin": 0.01
+  }
+}

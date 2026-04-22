@@ -1,0 +1,72 @@
+{
+  "metrics": {
+    "Baseline": {
+      "Hit@1": 39.44444444444444,
+      "Hit@3": 74.48717948717949,
+      "Hit@5": 91.02564102564102,
+      "MRR": 59.62324552228399
+    },
+    "iKnow": {
+      "Hit@1": 43.56837606837607,
+      "Hit@3": 80.40598290598291,
+      "Hit@5": 91.64529914529915,
+      "MRR": 63.583554503426306
+    },
+    "Full2Hop": {
+      "Hit@1": 49.80769230769231,
+      "Hit@3": 80.02136752136752,
+      "Hit@5": 91.02564102564102,
+      "MRR": 66.92808882712728
+    },
+    "Selective2Hop_OriginalAgg": {
+      "Hit@1": 53.11965811965812,
+      "Hit@3": 81.02564102564102,
+      "Hit@5": 91.02564102564102,
+      "MRR": 69.14283241687087
+    },
+    "Selective2Hop_StaticAlpha": {
+      "Hit@1": 49.93589743589744,
+      "Hit@3": 80.29914529914531,
+      "Hit@5": 91.02564102564102,
+      "MRR": 67.05807458211305
+    },
+    "Selective2Hop_PositiveResidual": {
+      "Hit@1": 50.83333333333333,
+      "Hit@3": 81.83760683760684,
+      "Hit@5": 91.02564102564102,
+      "MRR": 68.05095207499055
+    }
+  },
+  "stats": {
+    "Baseline": {
+      "avg_prompts": 1.0,
+      "avg_time_ms": 13.757697129860903
+    },
+    "iKnow": {
+      "avg_prompts": 47.21089743589744,
+      "avg_time_ms": 360.3465667647174
+    },
+    "Full2Hop": {
+      "avg_prompts": 456.5207264957265,
+      "avg_time_ms": 3351.690785650514
+    },
+    "Selective2Hop_OriginalAgg": {
+      "avg_prompts": 64.19123931623932,
+      "avg_time_ms": 486.20740210908093,
+      "hop2_activation_sample": 0.42799145299145297,
+      "hop2_activation_candidate": 0.09606837606837608
+    },
+    "Selective2Hop_StaticAlpha": {
+      "avg_prompts": 64.19123931623932,
+      "avg_time_ms": 486.2142502242683,
+      "hop2_activation_sample": 0.42799145299145297,
+      "hop2_activation_candidate": 0.09606837606837608
+    },
+    "Selective2Hop_PositiveResidual": {
+      "avg_prompts": 64.19123931623932,
+      "avg_time_ms": 486.8158184055589,
+      "hop2_activation_sample": 0.42799145299145297,
+      "hop2_activation_candidate": 0.09606837606837608
+    }
+  }
+}

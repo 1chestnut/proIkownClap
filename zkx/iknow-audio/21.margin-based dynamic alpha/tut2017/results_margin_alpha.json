@@ -1,0 +1,72 @@
+{
+  "metrics": {
+    "Baseline": {
+      "Hit@1": 39.871794871794876,
+      "Hit@3": 74.85042735042735,
+      "Hit@5": 91.28205128205128,
+      "MRR": 59.95236855974036
+    },
+    "iKnow": {
+      "Hit@1": 43.888888888888886,
+      "Hit@3": 80.40598290598291,
+      "Hit@5": 92.008547008547,
+      "MRR": 63.93109430929944
+    },
+    "Full2Hop": {
+      "Hit@1": 50.19230769230769,
+      "Hit@3": 80.36324786324786,
+      "Hit@5": 91.28205128205128,
+      "MRR": 67.2985224058942
+    },
+    "Selective2Hop_OriginalAgg": {
+      "Hit@1": 52.88461538461539,
+      "Hit@3": 81.36752136752136,
+      "Hit@5": 91.28205128205128,
+      "MRR": 69.13506086743266
+    },
+    "Selective2Hop_StaticAlpha": {
+      "Hit@1": 50.44871794871795,
+      "Hit@3": 80.66239316239316,
+      "Hit@5": 91.28205128205128,
+      "MRR": 67.5022261095979
+    },
+    "Selective2Hop_MarginAlpha": {
+      "Hit@1": 49.03846153846153,
+      "Hit@3": 81.02564102564102,
+      "Hit@5": 91.28205128205128,
+      "MRR": 66.81846542583722
+    }
+  },
+  "stats": {
+    "Baseline": {
+      "avg_prompts": 1.0,
+      "avg_time_ms": 12.89030415380103
+    },
+    "iKnow": {
+      "avg_prompts": 47.207692307692305,
+      "avg_time_ms": 348.5047121333261
+    },
+    "Full2Hop": {
+      "avg_prompts": 456.45021367521366,
+      "avg_time_ms": 3248.9756250483356
+    },
+    "Selective2Hop_OriginalAgg": {
+      "avg_prompts": 63.91901709401709,
+      "avg_time_ms": 468.24556950829987,
+      "hop2_activation_sample": 0.4264957264957265,
+      "hop2_activation_candidate": 0.09594017094017095
+    },
+    "Selective2Hop_StaticAlpha": {
+      "avg_prompts": 63.91901709401709,
+      "avg_time_ms": 468.1862924852942,
+      "hop2_activation_sample": 0.4264957264957265,
+      "hop2_activation_candidate": 0.09594017094017095
+    },
+    "Selective2Hop_MarginAlpha": {
+      "avg_prompts": 63.91901709401709,
+      "avg_time_ms": 468.12244434641974,
+      "hop2_activation_sample": 0.4264957264957265,
+      "hop2_activation_candidate": 0.09594017094017095
+    }
+  }
+}

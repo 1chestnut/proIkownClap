@@ -1,0 +1,176 @@
+{
+  "target_name": "dcase",
+  "variant_name": "hard_lr",
+  "feature_columns": [
+    "baseline_top1",
+    "baseline_margin",
+    "entropy",
+    "hop2_activation",
+    "prompt_count_log1p",
+    "base_score",
+    "orig_minus_base",
+    "ours_minus_base",
+    "orig_minus_ours"
+  ],
+  "metrics": {
+    "OriginalAgg": {
+      "Hit@1": 56.95,
+      "Hit@3": 80.38,
+      "Hit@5": 90.19,
+      "MRR": 69.15
+    },
+    "Ours": {
+      "Hit@1": 60.49,
+      "Hit@3": 84.47,
+      "Hit@5": 90.19,
+      "MRR": 72.59
+    },
+    "OracleCandidate": {
+      "Hit@1": 74.11,
+      "Hit@3": 86.1,
+      "Hit@5": 90.19,
+      "MRR": 80.35
+    },
+    "hard_lr": {
+      "Hit@1": 59.95,
+      "Hit@3": 84.47,
+      "Hit@5": 90.19,
+      "MRR": 72.27
+    }
+  },
+  "diagnostics": {
+    "variant_name": "hard_lr",
+    "model_kind": "lr",
+    "train_rows_before": 62972,
+    "train_rows_after": 49604,
+    "hard_mining_keep_ratio": 0.787715174998412,
+    "train_choose_orig_ratio": 0.30205225385049594,
+    "gt_weight_mean": 1.0,
+    "route_choose_orig_ratio": 0.18147138964577655,
+    "oracle_match_accuracy": 0.8349705304518664,
+    "route_choose_orig_gt_ratio": 0.5456852791878173,
+    "route_choose_orig_non_gt_ratio": 0.08188757807078417,
+    "oracle_choose_orig_gt_ratio": 0.6446700507614214,
+    "oracle_choose_orig_non_gt_ratio": 0.0006939625260235947,
+    "true_candidate_match_accuracy": 0.6624365482233503,
+    "hard_negative_match_accuracy": 0.8949691085613416,
+    "key_candidate_ratio_test": 0.8321525885558583,
+    "true_gap_improved_vs_ours_ratio": 0.48942598187311176,
+    "true_gap_improved_vs_orig_ratio": 0.7129909365558912,
+    "oracle_gap_above_router_ratio": 0.3716012084592145,
+    "top1_changed_ratio": 0.03323262839879154,
+    "top1_corrected_vs_ours_ratio": 0.00906344410876133,
+    "top1_corrected_vs_orig_ratio": 0.06646525679758308,
+    "prob_low_ratio": 0.6817438692098092,
+    "prob_mid_ratio": 0.2332425068119891,
+    "prob_high_ratio": 0.08501362397820164,
+    "scaler_mean": {
+      "baseline_top1": 0.3506333235125062,
+      "baseline_margin": 0.11408452375345081,
+      "entropy": 0.9974319182906711,
+      "hop2_activation": 0.19129505685025402,
+      "prompt_count_log1p": 4.206710870937734,
+      "base_score": 0.2366886684325436,
+      "orig_minus_base": 0.1813289449512281,
+      "ours_minus_base": 0.09221720653973184,
+      "orig_minus_ours": 0.08911173841149621
+    },
+    "scaler_scale": {
+      "baseline_top1": 0.08920355926394294,
+      "baseline_margin": 0.08359591884313,
+      "entropy": 0.0020868677180522536,
+      "hop2_activation": 0.39332080808789166,
+      "prompt_count_log1p": 0.35376637197753585,
+      "base_score": 0.1320910760011867,
+      "orig_minus_base": 0.09388227626126565,
+      "ours_minus_base": 0.04695927147772509,
+      "orig_minus_ours": 0.04796362199673939
+    },
+    "router_margin_bucket_profile": {
+      "(-0.00099839, 0.018]": 0.1974025974025974,
+      "(0.018, 0.0399]": 0.2245430809399478,
+      "(0.0399, 0.0731]": 0.21485411140583555,
+      "(0.0731, 0.284]": 0.2356020942408377
+    },
+    "oracle_margin_bucket_profile": {
+      "(-0.00099839, 0.018]": 0.15064935064935064,
+      "(0.018, 0.0399]": 0.16971279373368145,
+      "(0.0399, 0.0731]": 0.14058355437665782,
+      "(0.0731, 0.284]": 0.20680628272251309
+    },
+    "router_entropy_bucket_profile": {
+      "(0.9939, 0.9984]": 0.30809399477806787,
+      "(0.9984, 0.9993]": 0.25654450261780104,
+      "(0.9993, 0.9997]": 0.1801566579634465,
+      "(0.9997, 1.0]": 0.1266490765171504
+    },
+    "oracle_entropy_bucket_profile": {
+      "(0.9939, 0.9984]": 0.14360313315926893,
+      "(0.9984, 0.9993]": 0.19895287958115182,
+      "(0.9993, 0.9997]": 0.1566579634464752,
+      "(0.9997, 1.0]": 0.16886543535620052
+    },
+    "true_label_profiles": {
+      "oracle_choose_orig": {
+        "bicycle": 1.0,
+        "skateboard": 1.0,
+        "train": 1.0,
+        "screaming": 1.0,
+        "truck": 1.0,
+        "motorcycle": 1.0,
+        "bus": 0.9411764705882353,
+        "civil defense siren": 0.9259259259259259,
+        "car": 0.8461538461538461,
+        "car alarm": 0.8148148148148148,
+        "ambulance (siren)": 0.7391304347826086,
+        "car passing by": 0.5666666666666667,
+        "train horn": 0.5217391304347826,
+        "police car (siren)": 0.05263157894736842,
+        "reversing beeps": 0.037037037037037035,
+        "air horn, truck horn": 0.0,
+        "fire engine, fire truck (siren)": 0.0
+      },
+      "router_choose_orig": {
+        "skateboard": 0.9545454545454546,
+        "civil defense siren": 0.8518518518518519,
+        "train": 0.8461538461538461,
+        "motorcycle": 0.782608695652174,
+        "fire engine, fire truck (siren)": 0.7692307692307693,
+        "car alarm": 0.5925925925925926,
+        "screaming": 0.5882352941176471,
+        "train horn": 0.5869565217391305,
+        "truck": 0.5625,
+        "ambulance (siren)": 0.5217391304347826,
+        "bicycle": 0.5,
+        "car passing by": 0.36666666666666664,
+        "car": 0.34615384615384615,
+        "police car (siren)": 0.3157894736842105,
+        "bus": 0.29411764705882354,
+        "reversing beeps": 0.18518518518518517,
+        "air horn, truck horn": 0.17647058823529413
+      }
+    },
+    "coef_mean": {
+      "baseline_top1": -1.7900121014262005,
+      "baseline_margin": 0.899707520261707,
+      "entropy": -0.01324022553914261,
+      "hop2_activation": -0.006731613396828929,
+      "prompt_count_log1p": 0.2071534154277306,
+      "base_score": 3.9549137488537145,
+      "orig_minus_base": 0.25253162019078884,
+      "ours_minus_base": 1.540338806631896,
+      "orig_minus_ours": -1.0137880091739417
+    },
+    "coef_abs_mean": {
+      "baseline_top1": 1.7900121014262005,
+      "baseline_margin": 0.899707520261707,
+      "entropy": 0.01324022553914261,
+      "hop2_activation": 0.006731613396828929,
+      "prompt_count_log1p": 0.2071534154277306,
+      "base_score": 3.9549137488537145,
+      "orig_minus_base": 0.25253162019078884,
+      "ours_minus_base": 1.540338806631896,
+      "orig_minus_ours": 1.0137880091739417
+    }
+  }
+}

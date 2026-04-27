@@ -1,0 +1,5 @@
+[RUN] ESC17 kappa=5 gpu=0
+[RUN] ESC17 kappa=10 gpu=2
+[RUN] ESC17 kappa=20 gpu=1
+[RUN] ESC17 kappa=50 gpu=0
+[RUN] ESC17 kappa=100 gpu=2

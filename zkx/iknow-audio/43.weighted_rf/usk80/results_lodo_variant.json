@@ -1,0 +1,89 @@
+{
+  "target_name": "usk80",
+  "variant_name": "weighted_rf",
+  "feature_columns": [
+    "baseline_top1",
+    "baseline_margin",
+    "entropy",
+    "hop2_activation",
+    "prompt_count_log1p",
+    "base_score",
+    "orig_minus_base",
+    "ours_minus_base",
+    "orig_minus_ours"
+  ],
+  "metrics": {
+    "OriginalAgg": {
+      "Hit@1": 84.85,
+      "Hit@3": 95.82,
+      "Hit@5": 98.67,
+      "MRR": 90.61
+    },
+    "Ours": {
+      "Hit@1": 85.97,
+      "Hit@3": 96.77,
+      "Hit@5": 98.67,
+      "MRR": 91.4
+    },
+    "OracleCandidate": {
+      "Hit@1": 97.17,
+      "Hit@3": 98.58,
+      "Hit@5": 98.67,
+      "MRR": 97.86
+    },
+    "weighted_rf": {
+      "Hit@1": 84.85,
+      "Hit@3": 95.8,
+      "Hit@5": 98.67,
+      "MRR": 90.62
+    }
+  },
+  "diagnostics": {
+    "variant_name": "weighted_rf",
+    "model_kind": "rf",
+    "train_rows_before": 29489,
+    "train_rows_after": 22620,
+    "hard_mining_keep_ratio": 0.7670656855098511,
+    "train_choose_orig_ratio": 0.29261715296198054,
+    "gt_weight_mean": 2.174535809018568,
+    "route_choose_orig_ratio": 0.7303939532753092,
+    "oracle_match_accuracy": 0.3329620108540417,
+    "key_candidate_ratio_test": 0.8018781493357765,
+    "prob_low_ratio": 2.2904260192395786e-05,
+    "prob_mid_ratio": 0.6935868071461292,
+    "prob_high_ratio": 0.30639028859367845,
+    "scaler_mean": {
+      "baseline_top1": 0.3979153273831378,
+      "baseline_margin": 0.07834007238037059,
+      "entropy": 0.9985552582266509,
+      "hop2_activation": 0.4573386383731211,
+      "prompt_count_log1p": 4.007737310097322,
+      "base_score": 0.3124439867873827,
+      "orig_minus_base": 0.1146050704603553,
+      "ours_minus_base": 0.0603953648702734,
+      "orig_minus_ours": 0.05420970559008186
+    },
+    "scaler_scale": {
+      "baseline_top1": 0.07382877701036945,
+      "baseline_margin": 0.06408516387867919,
+      "entropy": 0.0012941689701291177,
+      "hop2_activation": 0.4981766837419639,
+      "prompt_count_log1p": 0.465840272820163,
+      "base_score": 0.09608868829898233,
+      "orig_minus_base": 0.07770245794930161,
+      "ours_minus_base": 0.03996717000973645,
+      "orig_minus_ours": 0.0382422248214274
+    },
+    "feature_importance_mean": {
+      "baseline_top1": 0.02688053327020003,
+      "baseline_margin": 0.019219694798258056,
+      "entropy": 0.03826197721755413,
+      "hop2_activation": 0.013485404288262552,
+      "prompt_count_log1p": 0.007332520545604626,
+      "base_score": 0.17559188827701028,
+      "orig_minus_base": 0.19292170797279237,
+      "ours_minus_base": 0.27442397500994,
+      "orig_minus_ours": 0.2518822986203781
+    }
+  }
+}

@@ -1,0 +1,4 @@
+Starting dynamic decay ablation from: /data/zkx/zkx/iknow-audio/17_ablation/esc50/test_ablation.py
+Using config: dyn2 -> {'tau_high': 0.08, 'gamma': 0.0, 'lambda_low': 0.2, 'lambda_mid': 0.4, 'lambda_high': 0.85}
+Locked setting: No LLM + Full 2-Hop + OriginalAgg
+esc50 dynamic decay:   0%|          | 0/2000 [00:00<?, ?it/s]esc50 dynamic decay:   0%|          | 1/2000 [00:13<7:31:57, 13.57s/it]esc50 dynamic decay:   0%|          | 2/2000 [00:30<8:40:43, 15.64s/it]esc50 dynamic decay:   0%|          | 3/2000 [00:45<8:22:20, 15.09s/it]esc50 dynamic decay:   0%|          | 4/2000 [00:58<8:02:04, 14.49s/it]esc50 dynamic decay:   0%|          | 5/2000 [01:11<7:45:13, 13.99s/it]esc50 dynamic decay:   0%|          | 6/2000 [01:23<7:23:23, 13.34s/it]esc50 dynamic decay:   0%|          | 7/2000 [01:30<6:11:05, 11.17s/it]esc50 dynamic decay:   0%|          | 8/2000 [01:42<6:17:21, 11.37s/it]Terminated

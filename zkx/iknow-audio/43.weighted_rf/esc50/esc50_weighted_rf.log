@@ -1,0 +1,54 @@
+Target: esc50
+Variant: weighted_rf
+
+Method                 Hit@1   Hit@3   Hit@5    MRR
+----------------------------------------------------
+OriginalAgg             87.50   96.45   97.65   91.87
+Ours                    92.05   96.85   97.65   94.50
+OracleCandidate         93.85   97.20   97.65   95.54
+weighted_rf             88.25   96.50   97.65   92.33
+
+Diagnostics
+- variant_name: weighted_rf
+- model_kind: rf
+- train_rows_before: 56470
+- train_rows_after: 44669
+- hard_mining_keep_ratio: 0.7910217814768904
+- train_choose_orig_ratio: 0.30399158252927083
+- gt_weight_mean: 2.191430298417247
+- route_choose_orig_ratio: 0.626
+- oracle_match_accuracy: 0.4118819280109603
+- key_candidate_ratio_test: 0.8029
+- prob_low_ratio: 0.097
+- prob_mid_ratio: 0.3091
+- prob_high_ratio: 0.5939
+- scaler_mean:
+  - baseline_top1: 0.34522791667231423
+  - baseline_margin: 0.10965445245222064
+  - entropy: 0.9974613162252368
+  - hop2_activation: 0.17096868074055832
+  - prompt_count_log1p: 4.225566840741851
+  - base_score: 0.2332254688893283
+  - orig_minus_base: 0.19067013505164174
+  - ours_minus_base: 0.09658093333393124
+  - orig_minus_ours: 0.09408920171771046
+- scaler_scale:
+  - baseline_top1: 0.09139332765500882
+  - baseline_margin: 0.08404834875346529
+  - entropy: 0.002138002117562884
+  - hop2_activation: 0.37648159443243884
+  - prompt_count_log1p: 0.3416752665155871
+  - base_score: 0.13424341032455625
+  - orig_minus_base: 0.09062114011598349
+  - ours_minus_base: 0.04541197224481914
+  - orig_minus_ours: 0.046357132732832054
+- feature_importance_mean:
+  - baseline_top1: 0.04818890387303278
+  - baseline_margin: 0.027016343147067755
+  - entropy: 0.03690017769046304
+  - hop2_activation: 0.00949875335156586
+  - prompt_count_log1p: 0.01970839865517739
+  - base_score: 0.4702567276832756
+  - orig_minus_base: 0.08583381010583867
+  - ours_minus_base: 0.13038290530064647
+  - orig_minus_ours: 0.1722139801929325

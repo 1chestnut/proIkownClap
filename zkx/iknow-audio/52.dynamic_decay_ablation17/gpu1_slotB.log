@@ -1,0 +1,4 @@
+Starting dynamic decay ablation from: /data/zkx/zkx/iknow-audio/17_ablation/tut2017/test_ablation.py
+Using config: dyn2 -> {'tau_high': 0.08, 'gamma': 0.0, 'lambda_low': 0.2, 'lambda_mid': 0.4, 'lambda_high': 0.85}
+Locked setting: No LLM + Full 2-Hop + OriginalAgg
+tut2017 dynamic decay:   0%|          | 0/4680 [00:00<?, ?it/s]tut2017 dynamic decay:   0%|          | 1/4680 [00:13<17:01:18, 13.10s/it]tut2017 dynamic decay:   0%|          | 2/4680 [00:24<16:03:36, 12.36s/it]tut2017 dynamic decay:   0%|          | 3/4680 [00:37<15:57:48, 12.29s/it]tut2017 dynamic decay:   0%|          | 4/4680 [00:52<17:22:52, 13.38s/it]tut2017 dynamic decay:   0%|          | 5/4680 [01:04<16:47:25, 12.93s/it]tut2017 dynamic decay:   0%|          | 6/4680 [01:16<16:24:05, 12.63s/it]tut2017 dynamic decay:   0%|          | 7/4680 [01:28<16:05:19, 12.39s/it]tut2017 dynamic decay:   0%|          | 8/4680 [01:43<17:21:08, 13.37s/it]Terminated

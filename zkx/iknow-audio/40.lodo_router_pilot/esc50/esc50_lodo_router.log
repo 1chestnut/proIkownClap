@@ -1,0 +1,59 @@
+Target: esc50
+
+Method                 Hit@1   Hit@3   Hit@5    MRR
+----------------------------------------------------
+OriginalAgg             87.50   96.45   97.65   91.87
+Ours                    92.05   96.85   97.65   94.50
+OracleCandidate         93.85   97.20   97.65   95.54
+LODOCandidateRouter     91.25   96.85   97.65   94.10
+
+Diagnostics
+- train_rows: 56470
+- test_rows: 10000
+- train_choose_orig_ratio: 0.24078271648663008
+- route_choose_orig_ratio: 0.2071
+- oracle_match_accuracy: 0.8892763731473409
+- key_candidate_ratio_test: 0.8029
+- prob_low_ratio: 0.7521
+- prob_mid_ratio: 0.0731
+- prob_high_ratio: 0.1748
+- coef_mean:
+  - baseline_top1: -1.853465142021374
+  - baseline_margin: 1.1146716598933877
+  - entropy: -0.08651993436612104
+  - hop2_activation: 0.03675187187138784
+  - prompt_count_log1p: 0.1753041622108222
+  - base_score: 4.496460407169764
+  - orig_minus_base: 0.3830302548378444
+  - ours_minus_base: 2.208600370914412
+  - orig_minus_ours: -1.416737680704387
+- coef_abs_mean:
+  - baseline_top1: 1.853465142021374
+  - baseline_margin: 1.1146716598933877
+  - entropy: 0.08651993436612104
+  - hop2_activation: 0.03675187187138784
+  - prompt_count_log1p: 0.1753041622108222
+  - base_score: 4.496460407169764
+  - orig_minus_base: 0.3830302548378444
+  - ours_minus_base: 2.208600370914412
+  - orig_minus_ours: 1.416737680704387
+- scaler_mean:
+  - baseline_top1: 0.3428731020497119
+  - baseline_margin: 0.10805669591779606
+  - entropy: 0.9975391001718077
+  - hop2_activation: 0.1780945634850363
+  - prompt_count_log1p: 4.216885641593921
+  - base_score: 0.22561134635521315
+  - orig_minus_base: 0.17976563077065866
+  - ours_minus_base: 0.09140752018062176
+  - orig_minus_ours: 0.08835811059003684
+- scaler_scale:
+  - baseline_top1: 0.09115017584101347
+  - baseline_margin: 0.08408434971491471
+  - entropy: 0.0021237833105980735
+  - hop2_activation: 0.3825923286503673
+  - prompt_count_log1p: 0.3428458296629459
+  - base_score: 0.1316826348805031
+  - orig_minus_base: 0.09179293542994615
+  - ours_minus_base: 0.045983987211241924
+  - orig_minus_ours: 0.04686878923684186

@@ -1,0 +1,1137 @@
+{
+  "metrics": {
+    "Baseline": {
+      "Hit@1": 91.10000000000001,
+      "Hit@3": 96.75,
+      "Hit@5": 97.65,
+      "MRR": 94.10549431018471
+    },
+    "iKnow": {
+      "Hit@1": 91.3,
+      "Hit@3": 96.85000000000001,
+      "Hit@5": 97.65,
+      "MRR": 94.29716097685137
+    },
+    "Full2Hop": {
+      "Hit@1": 92.0,
+      "Hit@3": 96.85000000000001,
+      "Hit@5": 97.65,
+      "MRR": 94.66632764351804
+    },
+    "Selective2Hop_OriginalAgg": {
+      "Hit@1": 87.5,
+      "Hit@3": 96.45,
+      "Hit@5": 97.65,
+      "MRR": 92.0679943101847
+    },
+    "Selective2Hop_Ours": {
+      "Hit@1": 92.05,
+      "Hit@3": 96.85000000000001,
+      "Hit@5": 97.65,
+      "MRR": 94.69966097685138
+    },
+    "OracleSample": {
+      "Hit@1": 92.65,
+      "Hit@3": 96.89999999999999,
+      "Hit@5": 97.65,
+      "MRR": 95.02882764351804
+    },
+    "OracleCandidate": {
+      "Hit@1": 93.85,
+      "Hit@3": 97.2,
+      "Hit@5": 97.65,
+      "MRR": 95.73966097685138
+    }
+  },
+  "stats": {
+    "Baseline": {
+      "avg_prompts": 1.0,
+      "avg_time_ms": 11.583608984947205
+    },
+    "iKnow": {
+      "avg_prompts": 47.54,
+      "avg_time_ms": 368.7374573945999
+    },
+    "Full2Hop": {
+      "avg_prompts": 398.284,
+      "avg_time_ms": 2983.176805615425
+    },
+    "Selective2Hop_OriginalAgg": {
+      "avg_prompts": 57.915,
+      "avg_time_ms": 446.20888698101044,
+      "hop2_activation_sample": 0.45,
+      "hop2_activation_candidate": 0.1293
+    },
+    "Selective2Hop_Ours": {
+      "avg_prompts": 57.915,
+      "avg_time_ms": 446.4070419073105,
+      "hop2_activation_sample": 0.45,
+      "hop2_activation_candidate": 0.1293
+    },
+    "OracleSample": {
+      "avg_prompts": 57.915,
+      "avg_time_ms": 446.9569660425186,
+      "hop2_activation_sample": 0.45,
+      "hop2_activation_candidate": 0.1293,
+      "route_choose_orig": 0.314
+    },
+    "OracleCandidate": {
+      "avg_prompts": 57.915,
+      "avg_time_ms": 446.9569660425186,
+      "hop2_activation_sample": 0.45,
+      "hop2_activation_candidate": 0.1293,
+      "route_choose_orig": 0.1664
+    }
+  },
+  "profiles": {
+    "feature_profiles": {
+      "baseline_margin": [
+        {
+          "bucket": "(-1000000000.001, 0.02]",
+          "count": 645,
+          "choose_orig_ratio": 0.1875968992248062,
+          "true_candidate_ratio": 0.19689922480620156,
+          "mean_flip_penalty": 0.02961679334326308
+        },
+        {
+          "bucket": "(0.02, 0.05]",
+          "count": 805,
+          "choose_orig_ratio": 0.1813664596273292,
+          "true_candidate_ratio": 0.19503105590062111,
+          "mean_flip_penalty": 0.02699664616436692
+        },
+        {
+          "bucket": "(0.05, 0.1]",
+          "count": 1900,
+          "choose_orig_ratio": 0.18526315789473685,
+          "true_candidate_ratio": 0.1994736842105263,
+          "mean_flip_penalty": 0.021004904398792667
+        },
+        {
+          "bucket": "(0.1, 0.15]",
+          "count": 2440,
+          "choose_orig_ratio": 0.16557377049180327,
+          "true_candidate_ratio": 0.1971311475409836,
+          "mean_flip_penalty": 0.019796913117170335
+        },
+        {
+          "bucket": "(0.15, 1000000000.0]",
+          "count": 4210,
+          "choose_orig_ratio": 0.15225653206650833,
+          "true_candidate_ratio": 0.19216152019002375,
+          "mean_flip_penalty": 0.027150892611424882
+        }
+      ],
+      "entropy": [
+        {
+          "bucket": "(0.8, 1.1]",
+          "count": 10000,
+          "choose_orig_ratio": 0.1664,
+          "true_candidate_ratio": 0.1953,
+          "mean_flip_penalty": 0.02433541761264205
+        }
+      ],
+      "orig_minus_base_i": [
+        {
+          "bucket": "(-0.02, 0.0]",
+          "count": 1607,
+          "choose_orig_ratio": 0.060360920970752956,
+          "true_candidate_ratio": 0.23459863098942127,
+          "mean_flip_penalty": 0.0008565376616444139
+        },
+        {
+          "bucket": "(-0.05, -0.02]",
+          "count": 359,
+          "choose_orig_ratio": 0.12813370473537605,
+          "true_candidate_ratio": 0.15598885793871867,
+          "mean_flip_penalty": 0.004054772322556435
+        },
+        {
+          "bucket": "(0.0, 0.02]",
+          "count": 659,
+          "choose_orig_ratio": 0.17754172989377845,
+          "true_candidate_ratio": 0.18057663125948406,
+          "mean_flip_penalty": 0.0010501336594633702
+        },
+        {
+          "bucket": "(0.02, 0.05]",
+          "count": 1226,
+          "choose_orig_ratio": 0.1761827079934747,
+          "true_candidate_ratio": 0.1737357259380098,
+          "mean_flip_penalty": 0.005173500226187667
+        },
+        {
+          "bucket": "(0.05, 1000000000.0]",
+          "count": 6149,
+          "choose_orig_ratio": 0.19320214669051877,
+          "true_candidate_ratio": 0.19320214669051877,
+          "mean_flip_penalty": 0.03797159009293669
+        }
+      ],
+      "ours_minus_base_i": [
+        {
+          "bucket": "(-0.02, 0.0]",
+          "count": 1670,
+          "choose_orig_ratio": 0.0592814371257485,
+          "true_candidate_ratio": 0.2341317365269461,
+          "mean_flip_penalty": 0.0012797711762839448
+        },
+        {
+          "bucket": "(-0.05, -0.02]",
+          "count": 93,
+          "choose_orig_ratio": 0.08602150537634409,
+          "true_candidate_ratio": 0.21505376344086022,
+          "mean_flip_penalty": 0.003537566591334599
+        },
+        {
+          "bucket": "(-1000000000.001, -0.05]",
+          "count": 6,
+          "choose_orig_ratio": 0.0,
+          "true_candidate_ratio": 0.0,
+          "mean_flip_penalty": 0.0
+        },
+        {
+          "bucket": "(0.0, 0.02]",
+          "count": 1316,
+          "choose_orig_ratio": 0.17857142857142858,
+          "true_candidate_ratio": 0.17249240121580547,
+          "mean_flip_penalty": 0.002105058564331756
+        },
+        {
+          "bucket": "(0.02, 0.05]",
+          "count": 2738,
+          "choose_orig_ratio": 0.1983199415631848,
+          "true_candidate_ratio": 0.19576333089846604,
+          "mean_flip_penalty": 0.012535905205611333
+        },
+        {
+          "bucket": "(0.05, 1000000000.0]",
+          "count": 4177,
+          "choose_orig_ratio": 0.18649748623413934,
+          "true_candidate_ratio": 0.18649748623413934,
+          "mean_flip_penalty": 0.048789657420495035
+        }
+      ],
+      "orig_minus_ours_i": [
+        {
+          "bucket": "(-0.02, 0.0]",
+          "count": 2053,
+          "choose_orig_ratio": 0.07355090112031173,
+          "true_candidate_ratio": 0.21821724305893814,
+          "mean_flip_penalty": 0.0010420406301661462
+        },
+        {
+          "bucket": "(-0.05, -0.02]",
+          "count": 145,
+          "choose_orig_ratio": 0.1724137931034483,
+          "true_candidate_ratio": 0.11724137931034483,
+          "mean_flip_penalty": 0.0060759029511747685
+        },
+        {
+          "bucket": "(0.0, 0.02]",
+          "count": 1546,
+          "choose_orig_ratio": 0.17658473479948253,
+          "true_candidate_ratio": 0.17658473479948253,
+          "mean_flip_penalty": 0.0037737484457498996
+        },
+        {
+          "bucket": "(0.02, 0.05]",
+          "count": 2743,
+          "choose_orig_ratio": 0.2034269048487058,
+          "true_candidate_ratio": 0.2034269048487058,
+          "mean_flip_penalty": 0.016339926436853114
+        },
+        {
+          "bucket": "(0.05, 1000000000.0]",
+          "count": 3513,
+          "choose_orig_ratio": 0.1870196413321947,
+          "true_candidate_ratio": 0.1870196413321947,
+          "mean_flip_penalty": 0.05399351764057832
+        }
+      ]
+    },
+    "semantic_profiles": {
+      "true_label_profile": [
+        {
+          "true_label": "chainsaw",
+          "count": 40,
+          "choose_orig_ratio": 0.975,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "cat",
+          "count": 40,
+          "choose_orig_ratio": 0.95,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "cow",
+          "count": 40,
+          "choose_orig_ratio": 0.925,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "hand saw",
+          "count": 40,
+          "choose_orig_ratio": 0.875,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "dog",
+          "count": 40,
+          "choose_orig_ratio": 0.825,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "insects",
+          "count": 40,
+          "choose_orig_ratio": 0.8,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "pig",
+          "count": 40,
+          "choose_orig_ratio": 0.675,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "wind",
+          "count": 40,
+          "choose_orig_ratio": 0.675,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "can opening",
+          "count": 40,
+          "choose_orig_ratio": 0.65,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "crackling fire",
+          "count": 40,
+          "choose_orig_ratio": 0.65,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "footsteps",
+          "count": 40,
+          "choose_orig_ratio": 0.625,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "breathing",
+          "count": 40,
+          "choose_orig_ratio": 0.55,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "clock tick",
+          "count": 40,
+          "choose_orig_ratio": 0.5,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "helicopter",
+          "count": 40,
+          "choose_orig_ratio": 0.475,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "clapping",
+          "count": 40,
+          "choose_orig_ratio": 0.45,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "engine",
+          "count": 40,
+          "choose_orig_ratio": 0.425,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "brushing teeth",
+          "count": 40,
+          "choose_orig_ratio": 0.4,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "rain",
+          "count": 40,
+          "choose_orig_ratio": 0.4,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "snoring",
+          "count": 40,
+          "choose_orig_ratio": 0.375,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "sheep",
+          "count": 40,
+          "choose_orig_ratio": 0.35,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "door wood creaks",
+          "count": 40,
+          "choose_orig_ratio": 0.325,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "car horn",
+          "count": 40,
+          "choose_orig_ratio": 0.25,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "crow",
+          "count": 40,
+          "choose_orig_ratio": 0.25,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "vacuum cleaner",
+          "count": 40,
+          "choose_orig_ratio": 0.25,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "washing machine",
+          "count": 40,
+          "choose_orig_ratio": 0.25,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "crickets",
+          "count": 40,
+          "choose_orig_ratio": 0.225,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "laughing",
+          "count": 40,
+          "choose_orig_ratio": 0.225,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "toilet flush",
+          "count": 40,
+          "choose_orig_ratio": 0.175,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "airplane",
+          "count": 40,
+          "choose_orig_ratio": 0.15,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "coughing",
+          "count": 40,
+          "choose_orig_ratio": 0.15,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "drinking sipping",
+          "count": 40,
+          "choose_orig_ratio": 0.15,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "keyboard typing",
+          "count": 40,
+          "choose_orig_ratio": 0.125,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "mouse click",
+          "count": 40,
+          "choose_orig_ratio": 0.1,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "rooster",
+          "count": 40,
+          "choose_orig_ratio": 0.1,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "door wood knock",
+          "count": 40,
+          "choose_orig_ratio": 0.075,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "pouring water",
+          "count": 40,
+          "choose_orig_ratio": 0.075,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "sneezing",
+          "count": 40,
+          "choose_orig_ratio": 0.075,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "chirping birds",
+          "count": 40,
+          "choose_orig_ratio": 0.05,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "glass breaking",
+          "count": 40,
+          "choose_orig_ratio": 0.05,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "siren",
+          "count": 40,
+          "choose_orig_ratio": 0.05,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "crying baby",
+          "count": 40,
+          "choose_orig_ratio": 0.025,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "sea waves",
+          "count": 40,
+          "choose_orig_ratio": 0.025,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "church bells",
+          "count": 40,
+          "choose_orig_ratio": 0.0,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "clock alarm",
+          "count": 40,
+          "choose_orig_ratio": 0.0,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "fireworks",
+          "count": 40,
+          "choose_orig_ratio": 0.0,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "frog",
+          "count": 40,
+          "choose_orig_ratio": 0.0,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "hen",
+          "count": 40,
+          "choose_orig_ratio": 0.0,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "thunderstorm",
+          "count": 40,
+          "choose_orig_ratio": 0.0,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "train",
+          "count": 40,
+          "choose_orig_ratio": 0.0,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "water drops",
+          "count": 40,
+          "choose_orig_ratio": 0.0,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        }
+      ],
+      "candidate_label_profile": [
+        {
+          "candidate_label": "clapping",
+          "count": 69,
+          "choose_orig_ratio": 0.4927536231884058,
+          "mean_flip_penalty": 0.03248736132746157,
+          "true_candidate_ratio": 0.5797101449275363
+        },
+        {
+          "candidate_label": "hand saw",
+          "count": 136,
+          "choose_orig_ratio": 0.4485294117647059,
+          "mean_flip_penalty": 0.035242236054995484,
+          "true_candidate_ratio": 0.29411764705882354
+        },
+        {
+          "candidate_label": "snoring",
+          "count": 101,
+          "choose_orig_ratio": 0.39603960396039606,
+          "mean_flip_penalty": 0.03587146132889361,
+          "true_candidate_ratio": 0.39603960396039606
+        },
+        {
+          "candidate_label": "toilet flush",
+          "count": 113,
+          "choose_orig_ratio": 0.35398230088495575,
+          "mean_flip_penalty": 0.04001673304401668,
+          "true_candidate_ratio": 0.35398230088495575
+        },
+        {
+          "candidate_label": "footsteps",
+          "count": 108,
+          "choose_orig_ratio": 0.32407407407407407,
+          "mean_flip_penalty": 0.05183276906609535,
+          "true_candidate_ratio": 0.37037037037037035
+        },
+        {
+          "candidate_label": "keyboard typing",
+          "count": 125,
+          "choose_orig_ratio": 0.32,
+          "mean_flip_penalty": 0.06634023535251618,
+          "true_candidate_ratio": 0.32
+        },
+        {
+          "candidate_label": "can opening",
+          "count": 117,
+          "choose_orig_ratio": 0.3162393162393162,
+          "mean_flip_penalty": 0.030952074461513095,
+          "true_candidate_ratio": 0.3418803418803419
+        },
+        {
+          "candidate_label": "helicopter",
+          "count": 109,
+          "choose_orig_ratio": 0.3119266055045872,
+          "mean_flip_penalty": 0.03195295544392472,
+          "true_candidate_ratio": 0.3302752293577982
+        },
+        {
+          "candidate_label": "car horn",
+          "count": 132,
+          "choose_orig_ratio": 0.2878787878787879,
+          "mean_flip_penalty": 0.07677687523943005,
+          "true_candidate_ratio": 0.30303030303030304
+        },
+        {
+          "candidate_label": "thunderstorm",
+          "count": 218,
+          "choose_orig_ratio": 0.27522935779816515,
+          "mean_flip_penalty": 0.005661678902052958,
+          "true_candidate_ratio": 0.1834862385321101
+        },
+        {
+          "candidate_label": "mouse click",
+          "count": 150,
+          "choose_orig_ratio": 0.26666666666666666,
+          "mean_flip_penalty": 0.0495781926314036,
+          "true_candidate_ratio": 0.26666666666666666
+        },
+        {
+          "candidate_label": "siren",
+          "count": 159,
+          "choose_orig_ratio": 0.2641509433962264,
+          "mean_flip_penalty": 0.020001427276329423,
+          "true_candidate_ratio": 0.25157232704402516
+        },
+        {
+          "candidate_label": "crackling fire",
+          "count": 169,
+          "choose_orig_ratio": 0.2485207100591716,
+          "mean_flip_penalty": 0.04240199755987472,
+          "true_candidate_ratio": 0.23668639053254437
+        },
+        {
+          "candidate_label": "breathing",
+          "count": 170,
+          "choose_orig_ratio": 0.2411764705882353,
+          "mean_flip_penalty": 0.028553044533028323,
+          "true_candidate_ratio": 0.23529411764705882
+        },
+        {
+          "candidate_label": "chainsaw",
+          "count": 176,
+          "choose_orig_ratio": 0.22727272727272727,
+          "mean_flip_penalty": 0.024447483433918518,
+          "true_candidate_ratio": 0.22727272727272727
+        },
+        {
+          "candidate_label": "wind",
+          "count": 182,
+          "choose_orig_ratio": 0.22527472527472528,
+          "mean_flip_penalty": 0.03201218039452375,
+          "true_candidate_ratio": 0.21978021978021978
+        },
+        {
+          "candidate_label": "laughing",
+          "count": 145,
+          "choose_orig_ratio": 0.2206896551724138,
+          "mean_flip_penalty": 0.02084921834797695,
+          "true_candidate_ratio": 0.27586206896551724
+        },
+        {
+          "candidate_label": "brushing teeth",
+          "count": 183,
+          "choose_orig_ratio": 0.2185792349726776,
+          "mean_flip_penalty": 0.03519357993303101,
+          "true_candidate_ratio": 0.2185792349726776
+        },
+        {
+          "candidate_label": "pig",
+          "count": 203,
+          "choose_orig_ratio": 0.2019704433497537,
+          "mean_flip_penalty": 0.03102645967981498,
+          "true_candidate_ratio": 0.19704433497536947
+        },
+        {
+          "candidate_label": "train",
+          "count": 214,
+          "choose_orig_ratio": 0.20093457943925233,
+          "mean_flip_penalty": 0.014434389004083437,
+          "true_candidate_ratio": 0.18691588785046728
+        },
+        {
+          "candidate_label": "cat",
+          "count": 204,
+          "choose_orig_ratio": 0.19607843137254902,
+          "mean_flip_penalty": 0.025398333721301136,
+          "true_candidate_ratio": 0.19607843137254902
+        },
+        {
+          "candidate_label": "airplane",
+          "count": 180,
+          "choose_orig_ratio": 0.18888888888888888,
+          "mean_flip_penalty": 0.025309497863054274,
+          "true_candidate_ratio": 0.21666666666666667
+        },
+        {
+          "candidate_label": "dog",
+          "count": 229,
+          "choose_orig_ratio": 0.18777292576419213,
+          "mean_flip_penalty": 0.024582958995775363,
+          "true_candidate_ratio": 0.17467248908296942
+        },
+        {
+          "candidate_label": "washing machine",
+          "count": 265,
+          "choose_orig_ratio": 0.18490566037735848,
+          "mean_flip_penalty": 0.02886405828988777,
+          "true_candidate_ratio": 0.1509433962264151
+        },
+        {
+          "candidate_label": "insects",
+          "count": 244,
+          "choose_orig_ratio": 0.18032786885245902,
+          "mean_flip_penalty": 0.03466171655254286,
+          "true_candidate_ratio": 0.16393442622950818
+        },
+        {
+          "candidate_label": "sneezing",
+          "count": 209,
+          "choose_orig_ratio": 0.17703349282296652,
+          "mean_flip_penalty": 0.013557024121854864,
+          "true_candidate_ratio": 0.19138755980861244
+        },
+        {
+          "candidate_label": "rain",
+          "count": 198,
+          "choose_orig_ratio": 0.17676767676767677,
+          "mean_flip_penalty": 0.024442988739471243,
+          "true_candidate_ratio": 0.20202020202020202
+        },
+        {
+          "candidate_label": "rooster",
+          "count": 250,
+          "choose_orig_ratio": 0.16,
+          "mean_flip_penalty": 0.04445934641361236,
+          "true_candidate_ratio": 0.16
+        },
+        {
+          "candidate_label": "clock alarm",
+          "count": 265,
+          "choose_orig_ratio": 0.15849056603773584,
+          "mean_flip_penalty": 0.03015166391741555,
+          "true_candidate_ratio": 0.1509433962264151
+        },
+        {
+          "candidate_label": "fireworks",
+          "count": 253,
+          "choose_orig_ratio": 0.1541501976284585,
+          "mean_flip_penalty": 0.02261362224817276,
+          "true_candidate_ratio": 0.15810276679841898
+        },
+        {
+          "candidate_label": "church bells",
+          "count": 254,
+          "choose_orig_ratio": 0.15354330708661418,
+          "mean_flip_penalty": 0.017804010353219792,
+          "true_candidate_ratio": 0.15748031496062992
+        },
+        {
+          "candidate_label": "clock tick",
+          "count": 229,
+          "choose_orig_ratio": 0.15283842794759825,
+          "mean_flip_penalty": 0.04029177929636693,
+          "true_candidate_ratio": 0.17467248908296942
+        },
+        {
+          "candidate_label": "cow",
+          "count": 306,
+          "choose_orig_ratio": 0.14705882352941177,
+          "mean_flip_penalty": 0.03186560127567622,
+          "true_candidate_ratio": 0.12418300653594772
+        },
+        {
+          "candidate_label": "chirping birds",
+          "count": 272,
+          "choose_orig_ratio": 0.14338235294117646,
+          "mean_flip_penalty": 0.017859239514698002,
+          "true_candidate_ratio": 0.14705882352941177
+        },
+        {
+          "candidate_label": "sheep",
+          "count": 295,
+          "choose_orig_ratio": 0.13898305084745763,
+          "mean_flip_penalty": 0.032849207419460104,
+          "true_candidate_ratio": 0.13559322033898305
+        },
+        {
+          "candidate_label": "coughing",
+          "count": 154,
+          "choose_orig_ratio": 0.13636363636363635,
+          "mean_flip_penalty": 0.016646602807880995,
+          "true_candidate_ratio": 0.2597402597402597
+        },
+        {
+          "candidate_label": "hen",
+          "count": 88,
+          "choose_orig_ratio": 0.13636363636363635,
+          "mean_flip_penalty": 0.004007163880900903,
+          "true_candidate_ratio": 0.0
+        },
+        {
+          "candidate_label": "crow",
+          "count": 313,
+          "choose_orig_ratio": 0.134185303514377,
+          "mean_flip_penalty": 0.029971445139985495,
+          "true_candidate_ratio": 0.12779552715654952
+        },
+        {
+          "candidate_label": "engine",
+          "count": 377,
+          "choose_orig_ratio": 0.11405835543766578,
+          "mean_flip_penalty": 0.015960258419380896,
+          "true_candidate_ratio": 0.10610079575596817
+        },
+        {
+          "candidate_label": "pouring water",
+          "count": 191,
+          "choose_orig_ratio": 0.10471204188481675,
+          "mean_flip_penalty": 0.03796405583151972,
+          "true_candidate_ratio": 0.2094240837696335
+        },
+        {
+          "candidate_label": "vacuum cleaner",
+          "count": 253,
+          "choose_orig_ratio": 0.09090909090909091,
+          "mean_flip_penalty": 0.015638741992207855,
+          "true_candidate_ratio": 0.15810276679841898
+        },
+        {
+          "candidate_label": "crickets",
+          "count": 370,
+          "choose_orig_ratio": 0.08108108108108109,
+          "mean_flip_penalty": 0.01990830342511873,
+          "true_candidate_ratio": 0.10810810810810811
+        },
+        {
+          "candidate_label": "frog",
+          "count": 662,
+          "choose_orig_ratio": 0.0755287009063444,
+          "mean_flip_penalty": 0.007984669321973519,
+          "true_candidate_ratio": 0.06042296072507553
+        },
+        {
+          "candidate_label": "drinking sipping",
+          "count": 257,
+          "choose_orig_ratio": 0.0,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 0.1556420233463035
+        },
+        {
+          "candidate_label": "water drops",
+          "count": 217,
+          "choose_orig_ratio": 0.0,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 0.18433179723502305
+        },
+        {
+          "candidate_label": "door wood knock",
+          "count": 124,
+          "choose_orig_ratio": 0.0,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 0.3225806451612903
+        },
+        {
+          "candidate_label": "glass breaking",
+          "count": 100,
+          "choose_orig_ratio": 0.0,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 0.4
+        },
+        {
+          "candidate_label": "door wood creaks",
+          "count": 99,
+          "choose_orig_ratio": 0.0,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 0.40404040404040403
+        },
+        {
+          "candidate_label": "crying baby",
+          "count": 86,
+          "choose_orig_ratio": 0.0,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 0.46511627906976744
+        },
+        {
+          "candidate_label": "sea waves",
+          "count": 77,
+          "choose_orig_ratio": 0.0,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 0.5194805194805194
+        }
+      ]
+    },
+    "error_tolerance": {
+      "by_choice": [
+        {
+          "choose_orig": 0.0,
+          "count": 8336,
+          "mean_flip_penalty": 0.020173869197634038,
+          "median_flip_penalty": 0.0,
+          "p75_flip_penalty": 0.03208570182323456,
+          "p90_flip_penalty": 0.07108859717845917
+        },
+        {
+          "choose_orig": 1.0,
+          "count": 1664,
+          "mean_flip_penalty": 0.04518317457628795,
+          "median_flip_penalty": 0.04057425260543823,
+          "p75_flip_penalty": 0.0634821355342865,
+          "p90_flip_penalty": 0.08919777870178223
+        }
+      ],
+      "high_risk_candidate_labels": [
+        {
+          "candidate_label": "car horn",
+          "count": 132,
+          "choose_orig_ratio": 0.2878787878787879,
+          "mean_flip_penalty": 0.07677687523943005,
+          "true_candidate_ratio": 0.30303030303030304
+        },
+        {
+          "candidate_label": "keyboard typing",
+          "count": 125,
+          "choose_orig_ratio": 0.32,
+          "mean_flip_penalty": 0.06634023535251618,
+          "true_candidate_ratio": 0.32
+        },
+        {
+          "candidate_label": "footsteps",
+          "count": 108,
+          "choose_orig_ratio": 0.32407407407407407,
+          "mean_flip_penalty": 0.05183276906609535,
+          "true_candidate_ratio": 0.37037037037037035
+        },
+        {
+          "candidate_label": "mouse click",
+          "count": 150,
+          "choose_orig_ratio": 0.26666666666666666,
+          "mean_flip_penalty": 0.0495781926314036,
+          "true_candidate_ratio": 0.26666666666666666
+        },
+        {
+          "candidate_label": "rooster",
+          "count": 250,
+          "choose_orig_ratio": 0.16,
+          "mean_flip_penalty": 0.04445934641361236,
+          "true_candidate_ratio": 0.16
+        },
+        {
+          "candidate_label": "crackling fire",
+          "count": 169,
+          "choose_orig_ratio": 0.2485207100591716,
+          "mean_flip_penalty": 0.04240199755987472,
+          "true_candidate_ratio": 0.23668639053254437
+        },
+        {
+          "candidate_label": "clock tick",
+          "count": 229,
+          "choose_orig_ratio": 0.15283842794759825,
+          "mean_flip_penalty": 0.04029177929636693,
+          "true_candidate_ratio": 0.17467248908296942
+        },
+        {
+          "candidate_label": "toilet flush",
+          "count": 113,
+          "choose_orig_ratio": 0.35398230088495575,
+          "mean_flip_penalty": 0.04001673304401668,
+          "true_candidate_ratio": 0.35398230088495575
+        },
+        {
+          "candidate_label": "pouring water",
+          "count": 191,
+          "choose_orig_ratio": 0.10471204188481675,
+          "mean_flip_penalty": 0.03796405583151972,
+          "true_candidate_ratio": 0.2094240837696335
+        },
+        {
+          "candidate_label": "snoring",
+          "count": 101,
+          "choose_orig_ratio": 0.39603960396039606,
+          "mean_flip_penalty": 0.03587146132889361,
+          "true_candidate_ratio": 0.39603960396039606
+        },
+        {
+          "candidate_label": "hand saw",
+          "count": 136,
+          "choose_orig_ratio": 0.4485294117647059,
+          "mean_flip_penalty": 0.035242236054995484,
+          "true_candidate_ratio": 0.29411764705882354
+        },
+        {
+          "candidate_label": "brushing teeth",
+          "count": 183,
+          "choose_orig_ratio": 0.2185792349726776,
+          "mean_flip_penalty": 0.03519357993303101,
+          "true_candidate_ratio": 0.2185792349726776
+        },
+        {
+          "candidate_label": "insects",
+          "count": 244,
+          "choose_orig_ratio": 0.18032786885245902,
+          "mean_flip_penalty": 0.03466171655254286,
+          "true_candidate_ratio": 0.16393442622950818
+        },
+        {
+          "candidate_label": "sheep",
+          "count": 295,
+          "choose_orig_ratio": 0.13898305084745763,
+          "mean_flip_penalty": 0.032849207419460104,
+          "true_candidate_ratio": 0.13559322033898305
+        },
+        {
+          "candidate_label": "clapping",
+          "count": 69,
+          "choose_orig_ratio": 0.4927536231884058,
+          "mean_flip_penalty": 0.03248736132746157,
+          "true_candidate_ratio": 0.5797101449275363
+        },
+        {
+          "candidate_label": "wind",
+          "count": 182,
+          "choose_orig_ratio": 0.22527472527472528,
+          "mean_flip_penalty": 0.03201218039452375,
+          "true_candidate_ratio": 0.21978021978021978
+        },
+        {
+          "candidate_label": "helicopter",
+          "count": 109,
+          "choose_orig_ratio": 0.3119266055045872,
+          "mean_flip_penalty": 0.03195295544392472,
+          "true_candidate_ratio": 0.3302752293577982
+        },
+        {
+          "candidate_label": "cow",
+          "count": 306,
+          "choose_orig_ratio": 0.14705882352941177,
+          "mean_flip_penalty": 0.03186560127567622,
+          "true_candidate_ratio": 0.12418300653594772
+        },
+        {
+          "candidate_label": "pig",
+          "count": 203,
+          "choose_orig_ratio": 0.2019704433497537,
+          "mean_flip_penalty": 0.03102645967981498,
+          "true_candidate_ratio": 0.19704433497536947
+        },
+        {
+          "candidate_label": "can opening",
+          "count": 117,
+          "choose_orig_ratio": 0.3162393162393162,
+          "mean_flip_penalty": 0.030952074461513095,
+          "true_candidate_ratio": 0.3418803418803419
+        }
+      ]
+    },
+    "extra_summary": {
+      "candidate_choose_orig_ratio": 0.1664,
+      "true_candidate_choose_orig_ratio": 0.7619047619047619,
+      "mixed_preference_ratio": 0.7845,
+      "sample_choose_orig_ratio": 0.314
+    }
+  },
+  "meta": {
+    "oracle_type": "profile_only",
+    "head_a": "Selective2Hop_OriginalAgg",
+    "head_b": "Selective2Hop_Ours",
+    "top_k": 5,
+    "skipped_count": 0,
+    "candidate_records_csv": "/data/zkx/zkx/iknow-audio/37.oracle_profile/esc50/candidate_records.csv",
+    "sample_records_csv": "/data/zkx/zkx/iknow-audio/37.oracle_profile/esc50/sample_records.csv"
+  }
+}

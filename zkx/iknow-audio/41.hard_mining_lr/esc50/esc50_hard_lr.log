@@ -1,0 +1,99 @@
+Target: esc50
+Variant: hard_lr
+
+Method                 Hit@1   Hit@3   Hit@5    MRR
+----------------------------------------------------
+OriginalAgg             87.50   96.45   97.65   91.87
+Ours                    92.05   96.85   97.65   94.50
+OracleCandidate         93.85   97.20   97.65   95.54
+hard_lr                 91.25   96.85   97.65   94.09
+
+Diagnostics
+- variant_name: hard_lr
+- model_kind: lr
+- train_rows_before: 56470
+- train_rows_after: 44669
+- hard_mining_keep_ratio: 0.7910217814768904
+- train_choose_orig_ratio: 0.30399158252927083
+- gt_weight_mean: 1.0
+- route_choose_orig_ratio: 0.2113
+- oracle_match_accuracy: 0.888030888030888
+- route_choose_orig_gt_ratio: 0.9447004608294931
+- route_choose_orig_non_gt_ratio: 0.03330433702000746
+- oracle_choose_orig_gt_ratio: 0.7619047619047619
+- oracle_choose_orig_non_gt_ratio: 0.021871504908661615
+- true_candidate_match_accuracy: 0.7619047619047619
+- hard_negative_match_accuracy: 0.9285714285714286
+- key_candidate_ratio_test: 0.8029
+- true_gap_improved_vs_ours_ratio: 0.7071172555043522
+- true_gap_improved_vs_orig_ratio: 0.833589349718382
+- oracle_gap_above_router_ratio: 0.24372759856630824
+- top1_changed_ratio: 0.014848950332821301
+- top1_corrected_vs_ours_ratio: 0.0030721966205837174
+- top1_corrected_vs_orig_ratio: 0.04249871991807476
+- prob_low_ratio: 0.7441
+- prob_mid_ratio: 0.0803
+- prob_high_ratio: 0.1756
+- scaler_mean:
+  - baseline_top1: 0.34522791667231423
+  - baseline_margin: 0.10965445245222064
+  - entropy: 0.9974613162252368
+  - hop2_activation: 0.17096868074055832
+  - prompt_count_log1p: 4.225566840741851
+  - base_score: 0.2332254688893283
+  - orig_minus_base: 0.19067013505164174
+  - ours_minus_base: 0.09658093333393124
+  - orig_minus_ours: 0.09408920171771046
+- scaler_scale:
+  - baseline_top1: 0.09139332765500882
+  - baseline_margin: 0.08404834875346529
+  - entropy: 0.002138002117562884
+  - hop2_activation: 0.37648159443243884
+  - prompt_count_log1p: 0.3416752665155871
+  - base_score: 0.13424341032455625
+  - orig_minus_base: 0.09062114011598349
+  - ours_minus_base: 0.04541197224481914
+  - orig_minus_ours: 0.046357132732832054
+- router_margin_bucket_profile:
+  - (-0.0009866, 0.0787]: 0.30283441074092493
+  - (0.0787, 0.133]: 0.2538653366583541
+  - (0.133, 0.187]: 0.24564025909317388
+  - (0.187, 0.376]: 0.2502492522432702
+- oracle_margin_bucket_profile:
+  - (-0.0009866, 0.0787]: 0.23570363003480854
+  - (0.0787, 0.133]: 0.21246882793017458
+  - (0.133, 0.187]: 0.19182859990034878
+  - (0.187, 0.376]: 0.1889332003988036
+- router_entropy_bucket_profile:
+  - (0.989, 0.997]: 0.25771144278606967
+  - (0.997, 0.998]: 0.2513715710723192
+  - (0.998, 0.999]: 0.25460886895864476
+  - (0.999, 1.0]: 0.28898854010961633
+- oracle_entropy_bucket_profile:
+  - (0.989, 0.997]: 0.2009950248756219
+  - (0.997, 0.998]: 0.19451371571072318
+  - (0.998, 0.999]: 0.2042850024912805
+  - (0.999, 1.0]: 0.229197807673144
+- true_label_profiles:
+  - oracle_choose_orig: {'brushing teeth': 1.0, 'crow': 1.0, 'cat': 1.0, 'chainsaw': 1.0, 'crackling fire': 1.0, 'cow': 1.0, 'toilet flush': 1.0, 'thunderstorm': 1.0, 'snoring': 1.0, 'rooster': 1.0, 'sheep': 1.0, 'siren': 1.0, 'wind': 1.0, 'frog': 1.0, 'hand saw': 1.0, 'mouse click': 1.0, 'keyboard typing': 1.0, 'train': 1.0, 'pig': 0.975, 'church bells': 0.975, 'washing machine': 0.975, 'dog': 0.975, 'engine': 0.975, 'fireworks': 0.975, 'insects': 0.975, 'breathing': 0.975, 'chirping birds': 0.975, 'car horn': 0.95, 'helicopter': 0.9444444444444444, 'can opening': 0.925, 'clock alarm': 0.925, 'rain': 0.875, 'clapping': 0.85, 'footsteps': 0.85, 'airplane': 0.8461538461538461, 'clock tick': 0.8, 'laughing': 0.75, 'crickets': 0.7, 'vacuum cleaner': 0.475, 'pouring water': 0.45, 'sneezing': 0.15, 'coughing': 0.1, 'glass breaking': 0.0, 'crying baby': 0.0, 'drinking sipping': 0.0, 'door wood knock': 0.0, 'door wood creaks': 0.0, 'sea waves': 0.0, 'water drops': 0.0}
+  - router_choose_orig: {'breathing': 1.0, 'crow': 1.0, 'brushing teeth': 1.0, 'church bells': 1.0, 'crackling fire': 1.0, 'cow': 1.0, 'toilet flush': 1.0, 'thunderstorm': 1.0, 'snoring': 1.0, 'vacuum cleaner': 1.0, 'rooster': 1.0, 'mouse click': 1.0, 'keyboard typing': 1.0, 'frog': 1.0, 'hand saw': 1.0, 'fireworks': 1.0, 'dog': 1.0, 'sheep': 1.0, 'siren': 1.0, 'pouring water': 1.0, 'train': 1.0, 'car horn': 0.975, 'chirping birds': 0.975, 'clock alarm': 0.975, 'cat': 0.975, 'clapping': 0.975, 'glass breaking': 0.975, 'crying baby': 0.95, 'sneezing': 0.95, 'chainsaw': 0.95, 'clock tick': 0.95, 'pig': 0.95, 'rain': 0.95, 'insects': 0.95, 'drinking sipping': 0.925, 'door wood knock': 0.925, 'crickets': 0.925, 'laughing': 0.925, 'airplane': 0.9230769230769231, 'coughing': 0.9, 'can opening': 0.9, 'footsteps': 0.9, 'engine': 0.9, 'door wood creaks': 0.875, 'wind': 0.8, 'washing machine': 0.8, 'helicopter': 0.75, 'sea waves': 0.725, 'water drops': 0.6}
+- coef_mean:
+  - baseline_top1: -1.9070145725628085
+  - baseline_margin: 1.0404086205226695
+  - entropy: 0.007196470909320851
+  - hop2_activation: 0.006206672498687785
+  - prompt_count_log1p: 0.1483903198572409
+  - base_score: 4.140045697173028
+  - orig_minus_base: 0.2622676830901819
+  - ours_minus_base: 1.5083242426969088
+  - orig_minus_ours: -0.9648781007685329
+- coef_abs_mean:
+  - baseline_top1: 1.9070145725628085
+  - baseline_margin: 1.0404086205226695
+  - entropy: 0.007196470909320851
+  - hop2_activation: 0.006206672498687785
+  - prompt_count_log1p: 0.1483903198572409
+  - base_score: 4.140045697173028
+  - orig_minus_base: 0.2622676830901819
+  - ours_minus_base: 1.5083242426969088
+  - orig_minus_ours: 0.9648781007685329

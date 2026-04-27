@@ -1,0 +1,49 @@
+{
+  "module_path": "/data/zkx/zkx/iknow-audio/17_ablation/esc50/test_ablation.py",
+  "config": "dyn2",
+  "config_values": {
+    "tau_high": 0.08,
+    "gamma": 0.0,
+    "lambda_low": 0.2,
+    "lambda_mid": 0.4,
+    "lambda_high": 0.85
+  },
+  "results": {
+    "Baseline": {
+      "Hit@1": 91.10000000000001,
+      "Hit@3": 96.75,
+      "Hit@5": 97.65,
+      "MRR": 94.10549431018471,
+      "avg_prompts": 1.0,
+      "avg_time_ms": 12.940739963054657
+    },
+    "iKnow": {
+      "Hit@1": 91.3,
+      "Hit@3": 96.85000000000001,
+      "Hit@5": 97.65,
+      "MRR": 94.29716097685137,
+      "avg_prompts": 47.54,
+      "avg_time_ms": 395.61706599950793
+    },
+    "Full2Hop_Static085_NoLLM_OriginalAgg": {
+      "Hit@1": 90.8,
+      "Hit@3": 96.89999999999999,
+      "Hit@5": 97.65,
+      "MRR": 94.01799431018472,
+      "avg_prompts": 398.284,
+      "avg_time_ms": 3195.942421529293,
+      "avg_lambda": 0.8499999999999998,
+      "positive_gain_rate": 0.6745
+    },
+    "Full2Hop_DynamicDecay_NoLLM_OriginalAgg": {
+      "Hit@1": 91.0,
+      "Hit@3": 96.95,
+      "Hit@5": 97.65,
+      "MRR": 94.12216097685139,
+      "avg_prompts": 398.284,
+      "avg_time_ms": 3192.702553126812,
+      "avg_lambda": 0.30676000000000003,
+      "positive_gain_rate": 0.6745
+    }
+  }
+}

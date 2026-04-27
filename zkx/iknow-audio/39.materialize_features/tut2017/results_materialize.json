@@ -1,0 +1,9 @@
+{
+  "dataset_name": "tut2017",
+  "row_count": 23400,
+  "sample_count": 4680,
+  "key_candidate_ratio": 0.8518376068376068,
+  "oracle_choose_orig_ratio": 0.2017948717948718,
+  "skipped_count": 0,
+  "csv_path": "/data/zkx/zkx/iknow-audio/39.materialize_features/tut2017/tut2017_features.csv"
+}

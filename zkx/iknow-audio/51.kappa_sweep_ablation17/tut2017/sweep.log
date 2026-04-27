@@ -1,0 +1,5 @@
+[RUN] TUT17 kappa=10 gpu=0
+[RUN] TUT17 kappa=5 gpu=1
+[RUN] TUT17 kappa=20 gpu=2
+[RUN] TUT17 kappa=100 gpu=0
+[RUN] TUT17 kappa=50 gpu=1

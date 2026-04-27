@@ -1,0 +1,70 @@
+{
+  "target_name": "esc50",
+  "variant_name": "heuristic_backoff_a",
+  "metrics": {
+    "OriginalAgg": {
+      "Hit@1": 87.5,
+      "Hit@3": 96.45,
+      "Hit@5": 97.65,
+      "MRR": 91.87
+    },
+    "Ours": {
+      "Hit@1": 92.05,
+      "Hit@3": 96.85,
+      "Hit@5": 97.65,
+      "MRR": 94.5
+    },
+    "OracleCandidate": {
+      "Hit@1": 93.85,
+      "Hit@3": 97.2,
+      "Hit@5": 97.65,
+      "MRR": 95.54
+    },
+    "heuristic_backoff_a": {
+      "Hit@1": 91.25,
+      "Hit@3": 96.75,
+      "Hit@5": 97.65,
+      "MRR": 94.05
+    }
+  },
+  "diagnostics": {
+    "variant_name": "heuristic_backoff_a",
+    "thresholds": {
+      "tau": 0.03862437605857845,
+      "gamma": 0.0,
+      "delta": null
+    },
+    "route_choose_orig_ratio": 0.0805,
+    "route_choose_orig_gt_ratio": 0.09882232462877624,
+    "route_choose_orig_non_gt_ratio": 0.0760531875233006,
+    "oracle_choose_orig_gt_ratio": 0.7619047619047619,
+    "oracle_choose_orig_non_gt_ratio": 0.021871504908661615,
+    "oracle_match_accuracy": 0.7408145472661601,
+    "margin_gate_ratio": 0.116,
+    "positive_gain_ratio": 0.8034,
+    "heuristic_margin_bucket_profile": {
+      "(-0.0009866, 0.0787]": 0.40029835902536054,
+      "(0.0787, 0.133]": 0.0,
+      "(0.133, 0.187]": 0.0,
+      "(0.187, 0.376]": 0.0
+    },
+    "oracle_margin_bucket_profile": {
+      "(-0.0009866, 0.0787]": 0.23570363003480854,
+      "(0.0787, 0.133]": 0.21246882793017458,
+      "(0.133, 0.187]": 0.19182859990034878,
+      "(0.187, 0.376]": 0.1889332003988036
+    },
+    "heuristic_entropy_bucket_profile": {
+      "(0.989, 0.997]": 0.017412935323383085,
+      "(0.997, 0.998]": 0.0344139650872818,
+      "(0.998, 0.999]": 0.03338315894369706,
+      "(0.999, 1.0]": 0.3158943697060289
+    },
+    "oracle_entropy_bucket_profile": {
+      "(0.989, 0.997]": 0.2009950248756219,
+      "(0.997, 0.998]": 0.19451371571072318,
+      "(0.998, 0.999]": 0.2042850024912805,
+      "(0.999, 1.0]": 0.229197807673144
+    }
+  }
+}

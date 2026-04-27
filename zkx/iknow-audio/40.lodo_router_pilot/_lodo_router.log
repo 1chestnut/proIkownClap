@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/data/zkx/zkx/iknow-audio/40.lodo_router_pilot/lodo40_pilot.py", line 24, in <module>
+    main()
+  File "/data/zkx/zkx/iknow-audio/40.lodo_router_pilot/lodo40_pilot.py", line 20, in main
+    run_lodo_pilot(target_name, DATASETS, out_dir)
+  File "/data/zkx/zkx/iknow-audio/40.lodo_router_pilot/lodo40_pilot_common.py", line 98, in run_lodo_pilot
+    target_df = tables[target_name]
+KeyError: ''

@@ -1,0 +1,64 @@
+Target: tut2017
+Variant: weighted_lr
+
+Method                 Hit@1   Hit@3   Hit@5    MRR
+----------------------------------------------------
+OriginalAgg             54.19   82.09   91.77   68.79
+Ours                    50.92   81.09   91.77   66.67
+OracleCandidate         76.79   87.91   91.77   82.55
+weighted_lr             50.38   81.03   91.77   66.35
+
+Diagnostics
+- variant_name: weighted_lr
+- model_kind: lr
+- train_rows_before: 44566
+- train_rows_after: 35258
+- hard_mining_keep_ratio: 0.7911412287393977
+- train_choose_orig_ratio: 0.29874071132792557
+- gt_weight_mean: 2.2437461001758465
+- route_choose_orig_ratio: 0.11132478632478632
+- oracle_match_accuracy: 0.7787086740580946
+- key_candidate_ratio_test: 0.8518376068376068
+- prob_low_ratio: 0.7740170940170941
+- prob_mid_ratio: 0.18363247863247864
+- prob_high_ratio: 0.04235042735042735
+- scaler_mean:
+  - baseline_top1: 0.3250285260292622
+  - baseline_margin: 0.13700608038081458
+  - entropy: 0.9968030568047451
+  - hop2_activation: 0.10686936298145101
+  - prompt_count_log1p: 4.265068581781727
+  - base_score: 0.19466284556945312
+  - orig_minus_base: 0.20918049304911315
+  - ours_minus_base: 0.10539759411598452
+  - orig_minus_ours: 0.10378289893312856
+- scaler_scale:
+  - baseline_top1: 0.08640939867321452
+  - baseline_margin: 0.08536774410942788
+  - entropy: 0.0021185280700423115
+  - hop2_activation: 0.30894708646852437
+  - prompt_count_log1p: 0.25558540716559275
+  - base_score: 0.1271363265546066
+  - orig_minus_base: 0.08660171136938101
+  - ours_minus_base: 0.043600179629268744
+  - orig_minus_ours: 0.04443031674418055
+- coef_mean:
+  - baseline_top1: -3.156615950834446
+  - baseline_margin: 0.9045226942072868
+  - entropy: 0.07200107609987746
+  - hop2_activation: -0.4055633809412594
+  - prompt_count_log1p: -0.01604522518643548
+  - base_score: 4.831227571940978
+  - orig_minus_base: 0.37352987624475836
+  - ours_minus_base: -0.645688031074788
+  - orig_minus_ours: 1.3616927607801046
+- coef_abs_mean:
+  - baseline_top1: 3.156615950834446
+  - baseline_margin: 0.9045226942072868
+  - entropy: 0.07200107609987746
+  - hop2_activation: 0.4055633809412594
+  - prompt_count_log1p: 0.01604522518643548
+  - base_score: 4.831227571940978
+  - orig_minus_base: 0.37352987624475836
+  - ours_minus_base: 0.645688031074788
+  - orig_minus_ours: 1.3616927607801046

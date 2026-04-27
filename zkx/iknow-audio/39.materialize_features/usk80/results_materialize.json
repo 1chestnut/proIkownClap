@@ -1,0 +1,9 @@
+{
+  "dataset_name": "usk80",
+  "row_count": 43660,
+  "sample_count": 8732,
+  "key_candidate_ratio": 0.8018781493357765,
+  "oracle_choose_orig_ratio": 0.19743472285845168,
+  "skipped_count": 0,
+  "csv_path": "/data/zkx/zkx/iknow-audio/39.materialize_features/usk80/usk80_features.csv"
+}

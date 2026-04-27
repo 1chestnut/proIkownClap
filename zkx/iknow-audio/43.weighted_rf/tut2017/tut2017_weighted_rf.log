@@ -1,0 +1,54 @@
+Target: tut2017
+Variant: weighted_rf
+
+Method                 Hit@1   Hit@3   Hit@5    MRR
+----------------------------------------------------
+OriginalAgg             54.19   82.09   91.77   68.79
+Ours                    50.92   81.09   91.77   66.67
+OracleCandidate         76.79   87.91   91.77   82.55
+weighted_rf             53.42   81.77   91.77   68.35
+
+Diagnostics
+- variant_name: weighted_rf
+- model_kind: rf
+- train_rows_before: 44566
+- train_rows_after: 35258
+- hard_mining_keep_ratio: 0.7911412287393977
+- train_choose_orig_ratio: 0.29874071132792557
+- gt_weight_mean: 2.2437461001758465
+- route_choose_orig_ratio: 0.7241452991452991
+- oracle_match_accuracy: 0.2836502282646867
+- key_candidate_ratio_test: 0.8518376068376068
+- prob_low_ratio: 0.13863247863247863
+- prob_mid_ratio: 0.03858974358974359
+- prob_high_ratio: 0.8227777777777778
+- scaler_mean:
+  - baseline_top1: 0.3250285260292622
+  - baseline_margin: 0.13700608038081458
+  - entropy: 0.9968030568047451
+  - hop2_activation: 0.10686936298145101
+  - prompt_count_log1p: 4.265068581781727
+  - base_score: 0.19466284556945312
+  - orig_minus_base: 0.20918049304911315
+  - ours_minus_base: 0.10539759411598452
+  - orig_minus_ours: 0.10378289893312856
+- scaler_scale:
+  - baseline_top1: 0.08640939867321452
+  - baseline_margin: 0.08536774410942788
+  - entropy: 0.0021185280700423115
+  - hop2_activation: 0.30894708646852437
+  - prompt_count_log1p: 0.25558540716559275
+  - base_score: 0.1271363265546066
+  - orig_minus_base: 0.08660171136938101
+  - ours_minus_base: 0.043600179629268744
+  - orig_minus_ours: 0.04443031674418055
+- feature_importance_mean:
+  - baseline_top1: 0.056259209453467046
+  - baseline_margin: 0.018093564827739626
+  - entropy: 0.034258840572359464
+  - hop2_activation: 0.014750578561703066
+  - prompt_count_log1p: 0.0079017890208348
+  - base_score: 0.49361540344770455
+  - orig_minus_base: 0.0803625015853917
+  - ours_minus_base: 0.13774158631353242
+  - orig_minus_ours: 0.15701652621726736

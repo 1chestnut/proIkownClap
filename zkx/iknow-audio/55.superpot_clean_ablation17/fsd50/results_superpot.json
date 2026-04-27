@@ -1,0 +1,52 @@
+{
+  "completed": true,
+  "total_samples": 10231,
+  "metrics": {
+    "Baseline": {
+      "Hit@1": 57.24758088163425,
+      "Hit@3": 79.53279249340241,
+      "Hit@5": 86.23790440817125,
+      "MRR": 70.04879271592614
+    },
+    "iKnow": {
+      "Hit@1": 58.449809402795424,
+      "Hit@3": 80.63727885837162,
+      "Hit@5": 87.44013292933242,
+      "MRR": 71.11094112641918
+    },
+    "Selective2Hop_OriginalAgg": {
+      "Hit@1": 61.82191379141824,
+      "Hit@3": 80.53953670217965,
+      "Hit@5": 86.55067930798553,
+      "MRR": 72.71605496315885
+    },
+    "Selective2Hop_SuperPot_DynKappa": {
+      "Hit@1": 62.574528394096376,
+      "Hit@3": 81.2628286580002,
+      "Hit@5": 87.1762291076141,
+      "MRR": 73.35730681349067
+    }
+  },
+  "stats": {
+    "Baseline": {
+      "avg_prompts": 1.0,
+      "avg_time_ms": 12.78707408075423
+    },
+    "iKnow": {
+      "avg_prompts": 42.5218453719089,
+      "avg_time_ms": 321.7565872582764
+    },
+    "Selective2Hop_OriginalAgg": {
+      "avg_prompts": 55.35617241716352,
+      "avg_time_ms": 415.31047109354625,
+      "hop2_activation_sample": 0.9984361255009285,
+      "hop2_activation_candidate": 0.35192389144104524
+    },
+    "Selective2Hop_SuperPot_DynKappa": {
+      "avg_prompts": 55.35617241716352,
+      "avg_time_ms": 415.05081811359975,
+      "hop2_activation_sample": 0.9984361255009285,
+      "hop2_activation_candidate": 0.35192389144104524
+    }
+  }
+}

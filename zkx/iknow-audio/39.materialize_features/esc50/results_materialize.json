@@ -1,0 +1,9 @@
+{
+  "dataset_name": "esc50",
+  "row_count": 10000,
+  "sample_count": 2000,
+  "key_candidate_ratio": 0.8029,
+  "oracle_choose_orig_ratio": 0.1664,
+  "skipped_count": 0,
+  "csv_path": "/data/zkx/zkx/iknow-audio/39.materialize_features/esc50/esc50_features.csv"
+}

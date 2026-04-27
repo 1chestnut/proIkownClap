@@ -1,0 +1,612 @@
+{
+  "metrics": {
+    "Baseline": {
+      "Hit@1": 40.149572649572654,
+      "Hit@3": 75.72649572649573,
+      "Hit@5": 91.62393162393163,
+      "MRR": 60.34371694307592
+    },
+    "iKnow": {
+      "Hit@1": 44.38034188034188,
+      "Hit@3": 80.7051282051282,
+      "Hit@5": 92.07264957264957,
+      "MRR": 64.1403778439035
+    },
+    "Full2Hop": {
+      "Hit@1": 50.34188034188034,
+      "Hit@3": 80.68376068376068,
+      "Hit@5": 91.62393162393163,
+      "MRR": 67.52640925076822
+    },
+    "Selective2Hop_OriginalAgg": {
+      "Hit@1": 53.73931623931624,
+      "Hit@3": 81.75213675213675,
+      "Hit@5": 91.58119658119658,
+      "MRR": 69.6822395315985
+    },
+    "Selective2Hop_Ours": {
+      "Hit@1": 50.44871794871795,
+      "Hit@3": 80.83333333333333,
+      "Hit@5": 91.62393162393163,
+      "MRR": 67.6286172279762
+    },
+    "OracleSample": {
+      "Hit@1": 60.427350427350426,
+      "Hit@3": 85.4059829059829,
+      "Hit@5": 91.64529914529915,
+      "MRR": 74.10689358125255
+    },
+    "OracleCandidate": {
+      "Hit@1": 76.51709401709401,
+      "Hit@3": 88.16239316239316,
+      "Hit@5": 91.64529914529915,
+      "MRR": 83.68666566102463
+    }
+  },
+  "stats": {
+    "Baseline": {
+      "avg_prompts": 1.0,
+      "avg_time_ms": 12.466685843263935
+    },
+    "iKnow": {
+      "avg_prompts": 47.23461538461538,
+      "avg_time_ms": 349.07070867016785
+    },
+    "Full2Hop": {
+      "avg_prompts": 457.0487179487179,
+      "avg_time_ms": 3261.3258990976547
+    },
+    "Selective2Hop_OriginalAgg": {
+      "avg_prompts": 63.85448717948718,
+      "avg_time_ms": 468.7291530971853,
+      "hop2_activation_sample": 0.4271367521367521,
+      "hop2_activation_candidate": 0.09542735042735043
+    },
+    "Selective2Hop_Ours": {
+      "avg_prompts": 63.85448717948718,
+      "avg_time_ms": 468.76914873082416,
+      "hop2_activation_sample": 0.4271367521367521,
+      "hop2_activation_candidate": 0.09542735042735043
+    },
+    "OracleSample": {
+      "avg_prompts": 63.85448717948718,
+      "avg_time_ms": 469.39745081795587,
+      "hop2_activation_sample": 0.4271367521367521,
+      "hop2_activation_candidate": 0.09542735042735043,
+      "route_choose_orig": 0.4638888888888889
+    },
+    "OracleCandidate": {
+      "avg_prompts": 63.85448717948718,
+      "avg_time_ms": 469.39745081795587,
+      "hop2_activation_sample": 0.4271367521367521,
+      "hop2_activation_candidate": 0.09542735042735043,
+      "route_choose_orig": 0.2038034188034188
+    }
+  },
+  "profiles": {
+    "feature_profiles": {
+      "baseline_margin": [
+        {
+          "bucket": "(-1000000000.001, 0.02]",
+          "count": 5540,
+          "choose_orig_ratio": 0.18285198555956678,
+          "true_candidate_ratio": 0.18285198555956678,
+          "mean_flip_penalty": 0.03152297834734624
+        },
+        {
+          "bucket": "(0.02, 0.05]",
+          "count": 6500,
+          "choose_orig_ratio": 0.19015384615384615,
+          "true_candidate_ratio": 0.1849230769230769,
+          "mean_flip_penalty": 0.03178280360882099
+        },
+        {
+          "bucket": "(0.05, 0.1]",
+          "count": 7435,
+          "choose_orig_ratio": 0.2246133154001345,
+          "true_candidate_ratio": 0.18453261600537996,
+          "mean_flip_penalty": 0.028874265430113094
+        },
+        {
+          "bucket": "(0.1, 0.15]",
+          "count": 3155,
+          "choose_orig_ratio": 0.2231378763866878,
+          "true_candidate_ratio": 0.17939778129952458,
+          "mean_flip_penalty": 0.02459919034206735
+        },
+        {
+          "bucket": "(0.15, 1000000000.0]",
+          "count": 770,
+          "choose_orig_ratio": 0.18961038961038962,
+          "true_candidate_ratio": 0.17532467532467533,
+          "mean_flip_penalty": 0.02030449505750235
+        }
+      ],
+      "entropy": [
+        {
+          "bucket": "(0.8, 1.1]",
+          "count": 23400,
+          "choose_orig_ratio": 0.2038034188034188,
+          "true_candidate_ratio": 0.18324786324786324,
+          "mean_flip_penalty": 0.02945088007256516
+        }
+      ],
+      "orig_minus_base_i": [
+        {
+          "bucket": "(-0.02, 0.0]",
+          "count": 2415,
+          "choose_orig_ratio": 0.16521739130434782,
+          "true_candidate_ratio": 0.17060041407867496,
+          "mean_flip_penalty": 0.001827850586138897
+        },
+        {
+          "bucket": "(-0.05, -0.02]",
+          "count": 936,
+          "choose_orig_ratio": 0.6217948717948718,
+          "true_candidate_ratio": 0.14423076923076922,
+          "mean_flip_penalty": 0.015338875767257478
+        },
+        {
+          "bucket": "(-1000000000.001, -0.05]",
+          "count": 4,
+          "choose_orig_ratio": 0.0,
+          "true_candidate_ratio": 1.0,
+          "mean_flip_penalty": 0.020483829081058502
+        },
+        {
+          "bucket": "(0.0, 0.02]",
+          "count": 927,
+          "choose_orig_ratio": 0.22545846817691478,
+          "true_candidate_ratio": 0.1725997842502697,
+          "mean_flip_penalty": 0.0013553620413540508
+        },
+        {
+          "bucket": "(0.02, 0.05]",
+          "count": 1733,
+          "choose_orig_ratio": 0.16330063473744952,
+          "true_candidate_ratio": 0.1621465666474322,
+          "mean_flip_penalty": 0.005763272776881601
+        },
+        {
+          "bucket": "(0.05, 1000000000.0]",
+          "count": 17385,
+          "choose_orig_ratio": 0.18958872591314352,
+          "true_candidate_ratio": 0.18958872591314352,
+          "mean_flip_penalty": 0.03790929187019563
+        }
+      ],
+      "ours_minus_base_i": [
+        {
+          "bucket": "(-0.02, 0.0]",
+          "count": 2720,
+          "choose_orig_ratio": 0.22830882352941176,
+          "true_candidate_ratio": 0.1676470588235294,
+          "mean_flip_penalty": 0.004549401658861076
+        },
+        {
+          "bucket": "(-0.05, -0.02]",
+          "count": 293,
+          "choose_orig_ratio": 0.6860068259385665,
+          "true_candidate_ratio": 0.18088737201365188,
+          "mean_flip_penalty": 0.01709776954032455
+        },
+        {
+          "bucket": "(0.0, 0.02]",
+          "count": 2016,
+          "choose_orig_ratio": 0.24702380952380953,
+          "true_candidate_ratio": 0.16517857142857142,
+          "mean_flip_penalty": 0.0030344027345852245
+        },
+        {
+          "bucket": "(0.02, 0.05]",
+          "count": 5380,
+          "choose_orig_ratio": 0.13903345724907062,
+          "true_candidate_ratio": 0.13847583643122677,
+          "mean_flip_penalty": 0.011886965070736895
+        },
+        {
+          "bucket": "(0.05, 1000000000.0]",
+          "count": 12991,
+          "choose_orig_ratio": 0.20791317065660841,
+          "true_candidate_ratio": 0.20791317065660841,
+          "mean_flip_penalty": 0.04631647653892073
+        }
+      ],
+      "orig_minus_ours_i": [
+        {
+          "bucket": "(-0.02, 0.0]",
+          "count": 3147,
+          "choose_orig_ratio": 0.22338735303463617,
+          "true_candidate_ratio": 0.17254528122020973,
+          "mean_flip_penalty": 0.002518268759605958
+        },
+        {
+          "bucket": "(-0.05, -0.02]",
+          "count": 527,
+          "choose_orig_ratio": 0.7267552182163188,
+          "true_candidate_ratio": 0.11764705882352941,
+          "mean_flip_penalty": 0.021344041405864187
+        },
+        {
+          "bucket": "(0.0, 0.02]",
+          "count": 2034,
+          "choose_orig_ratio": 0.16224188790560473,
+          "true_candidate_ratio": 0.16224188790560473,
+          "mean_flip_penalty": 0.00423078753251945
+        },
+        {
+          "bucket": "(0.02, 0.05]",
+          "count": 5850,
+          "choose_orig_ratio": 0.14615384615384616,
+          "true_candidate_ratio": 0.14615384615384616,
+          "mean_flip_penalty": 0.014906828961311243
+        },
+        {
+          "bucket": "(0.05, 1000000000.0]",
+          "count": 11842,
+          "choose_orig_ratio": 0.21094409728086472,
+          "true_candidate_ratio": 0.21094409728086472,
+          "mean_flip_penalty": 0.04848563763096091
+        }
+      ]
+    },
+    "semantic_profiles": {
+      "true_label_profile": [
+        {
+          "true_label": "office",
+          "count": 312,
+          "choose_orig_ratio": 0.8782051282051282,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "bus",
+          "count": 312,
+          "choose_orig_ratio": 0.875,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "cafe or restaurant",
+          "count": 312,
+          "choose_orig_ratio": 0.8461538461538461,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "train",
+          "count": 312,
+          "choose_orig_ratio": 0.8205128205128205,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "park",
+          "count": 312,
+          "choose_orig_ratio": 0.7948717948717948,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "home",
+          "count": 312,
+          "choose_orig_ratio": 0.5544871794871795,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "metro station",
+          "count": 312,
+          "choose_orig_ratio": 0.5448717948717948,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "residential area",
+          "count": 312,
+          "choose_orig_ratio": 0.4166666666666667,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "library",
+          "count": 312,
+          "choose_orig_ratio": 0.33653846153846156,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "car",
+          "count": 312,
+          "choose_orig_ratio": 0.30128205128205127,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "beach",
+          "count": 312,
+          "choose_orig_ratio": 0.20192307692307693,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "city center",
+          "count": 312,
+          "choose_orig_ratio": 0.16987179487179488,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "tram",
+          "count": 312,
+          "choose_orig_ratio": 0.10576923076923077,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "forest path",
+          "count": 312,
+          "choose_orig_ratio": 0.060897435897435896,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        },
+        {
+          "true_label": "grocery store",
+          "count": 312,
+          "choose_orig_ratio": 0.05128205128205128,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 1.0
+        }
+      ],
+      "candidate_label_profile": [
+        {
+          "candidate_label": "beach",
+          "count": 437,
+          "choose_orig_ratio": 0.6544622425629291,
+          "mean_flip_penalty": 0.056315234719479385,
+          "true_candidate_ratio": 0.6544622425629291
+        },
+        {
+          "candidate_label": "car",
+          "count": 541,
+          "choose_orig_ratio": 0.5619223659889094,
+          "mean_flip_penalty": 0.054684093831427215,
+          "true_candidate_ratio": 0.5619223659889094
+        },
+        {
+          "candidate_label": "home",
+          "count": 449,
+          "choose_orig_ratio": 0.3674832962138085,
+          "mean_flip_penalty": 0.07676757334468094,
+          "true_candidate_ratio": 0.3674832962138085
+        },
+        {
+          "candidate_label": "grocery store",
+          "count": 3473,
+          "choose_orig_ratio": 0.31615318168730205,
+          "mean_flip_penalty": 0.008032493960469523,
+          "true_candidate_ratio": 0.08983587676360495
+        },
+        {
+          "candidate_label": "forest path",
+          "count": 1000,
+          "choose_orig_ratio": 0.308,
+          "mean_flip_penalty": 0.026231464952230454,
+          "true_candidate_ratio": 0.293
+        },
+        {
+          "candidate_label": "office",
+          "count": 1133,
+          "choose_orig_ratio": 0.27714033539276256,
+          "mean_flip_penalty": 0.05861953146828031,
+          "true_candidate_ratio": 0.2727272727272727
+        },
+        {
+          "candidate_label": "bus",
+          "count": 1287,
+          "choose_orig_ratio": 0.2331002331002331,
+          "mean_flip_penalty": 0.03914851643776097,
+          "true_candidate_ratio": 0.23465423465423466
+        },
+        {
+          "candidate_label": "park",
+          "count": 1312,
+          "choose_orig_ratio": 0.22408536585365854,
+          "mean_flip_penalty": 0.06446024169009633,
+          "true_candidate_ratio": 0.22179878048780488
+        },
+        {
+          "candidate_label": "train",
+          "count": 1208,
+          "choose_orig_ratio": 0.19370860927152317,
+          "mean_flip_penalty": 0.053285299226740336,
+          "true_candidate_ratio": 0.1945364238410596
+        },
+        {
+          "candidate_label": "library",
+          "count": 1724,
+          "choose_orig_ratio": 0.1751740139211137,
+          "mean_flip_penalty": 0.026162458026215536,
+          "true_candidate_ratio": 0.169953596287703
+        },
+        {
+          "candidate_label": "cafe or restaurant",
+          "count": 1644,
+          "choose_orig_ratio": 0.15693430656934307,
+          "mean_flip_penalty": 0.025189225872357685,
+          "true_candidate_ratio": 0.18917274939172748
+        },
+        {
+          "candidate_label": "residential area",
+          "count": 2319,
+          "choose_orig_ratio": 0.13626563173781803,
+          "mean_flip_penalty": 0.03607374857653313,
+          "true_candidate_ratio": 0.13410952996981457
+        },
+        {
+          "candidate_label": "city center",
+          "count": 2583,
+          "choose_orig_ratio": 0.12117692605497483,
+          "mean_flip_penalty": 0.025456136077400146,
+          "true_candidate_ratio": 0.1207897793263647
+        },
+        {
+          "candidate_label": "metro station",
+          "count": 2773,
+          "choose_orig_ratio": 0.0998918139199423,
+          "mean_flip_penalty": 0.016118228876156538,
+          "true_candidate_ratio": 0.10277677605481428
+        },
+        {
+          "candidate_label": "tram",
+          "count": 1517,
+          "choose_orig_ratio": 0.0,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 0.18391562294001318
+        }
+      ]
+    },
+    "error_tolerance": {
+      "by_choice": [
+        {
+          "choose_orig": 0.0,
+          "count": 18631,
+          "mean_flip_penalty": 0.023874808658910358,
+          "median_flip_penalty": 0.0058487653732299805,
+          "p75_flip_penalty": 0.0454220324754715,
+          "p90_flip_penalty": 0.07268080115318298
+        },
+        {
+          "choose_orig": 1.0,
+          "count": 4769,
+          "mean_flip_penalty": 0.05123485711341285,
+          "median_flip_penalty": 0.052744776010513306,
+          "p75_flip_penalty": 0.07470881938934326,
+          "p90_flip_penalty": 0.09497140645980834
+        }
+      ],
+      "high_risk_candidate_labels": [
+        {
+          "candidate_label": "home",
+          "count": 449,
+          "choose_orig_ratio": 0.3674832962138085,
+          "mean_flip_penalty": 0.07676757334468094,
+          "true_candidate_ratio": 0.3674832962138085
+        },
+        {
+          "candidate_label": "park",
+          "count": 1312,
+          "choose_orig_ratio": 0.22408536585365854,
+          "mean_flip_penalty": 0.06446024169009633,
+          "true_candidate_ratio": 0.22179878048780488
+        },
+        {
+          "candidate_label": "office",
+          "count": 1133,
+          "choose_orig_ratio": 0.27714033539276256,
+          "mean_flip_penalty": 0.05861953146828031,
+          "true_candidate_ratio": 0.2727272727272727
+        },
+        {
+          "candidate_label": "beach",
+          "count": 437,
+          "choose_orig_ratio": 0.6544622425629291,
+          "mean_flip_penalty": 0.056315234719479385,
+          "true_candidate_ratio": 0.6544622425629291
+        },
+        {
+          "candidate_label": "car",
+          "count": 541,
+          "choose_orig_ratio": 0.5619223659889094,
+          "mean_flip_penalty": 0.054684093831427215,
+          "true_candidate_ratio": 0.5619223659889094
+        },
+        {
+          "candidate_label": "train",
+          "count": 1208,
+          "choose_orig_ratio": 0.19370860927152317,
+          "mean_flip_penalty": 0.053285299226740336,
+          "true_candidate_ratio": 0.1945364238410596
+        },
+        {
+          "candidate_label": "bus",
+          "count": 1287,
+          "choose_orig_ratio": 0.2331002331002331,
+          "mean_flip_penalty": 0.03914851643776097,
+          "true_candidate_ratio": 0.23465423465423466
+        },
+        {
+          "candidate_label": "residential area",
+          "count": 2319,
+          "choose_orig_ratio": 0.13626563173781803,
+          "mean_flip_penalty": 0.03607374857653313,
+          "true_candidate_ratio": 0.13410952996981457
+        },
+        {
+          "candidate_label": "forest path",
+          "count": 1000,
+          "choose_orig_ratio": 0.308,
+          "mean_flip_penalty": 0.026231464952230454,
+          "true_candidate_ratio": 0.293
+        },
+        {
+          "candidate_label": "library",
+          "count": 1724,
+          "choose_orig_ratio": 0.1751740139211137,
+          "mean_flip_penalty": 0.026162458026215536,
+          "true_candidate_ratio": 0.169953596287703
+        },
+        {
+          "candidate_label": "city center",
+          "count": 2583,
+          "choose_orig_ratio": 0.12117692605497483,
+          "mean_flip_penalty": 0.025456136077400146,
+          "true_candidate_ratio": 0.1207897793263647
+        },
+        {
+          "candidate_label": "cafe or restaurant",
+          "count": 1644,
+          "choose_orig_ratio": 0.15693430656934307,
+          "mean_flip_penalty": 0.025189225872357685,
+          "true_candidate_ratio": 0.18917274939172748
+        },
+        {
+          "candidate_label": "metro station",
+          "count": 2773,
+          "choose_orig_ratio": 0.0998918139199423,
+          "mean_flip_penalty": 0.016118228876156538,
+          "true_candidate_ratio": 0.10277677605481428
+        },
+        {
+          "candidate_label": "grocery store",
+          "count": 3473,
+          "choose_orig_ratio": 0.31615318168730205,
+          "mean_flip_penalty": 0.008032493960469523,
+          "true_candidate_ratio": 0.08983587676360495
+        },
+        {
+          "candidate_label": "tram",
+          "count": 1517,
+          "choose_orig_ratio": 0.0,
+          "mean_flip_penalty": 0.0,
+          "true_candidate_ratio": 0.18391562294001318
+        }
+      ]
+    },
+    "extra_summary": {
+      "candidate_choose_orig_ratio": 0.2038034188034188,
+      "true_candidate_choose_orig_ratio": 0.8589085820895522,
+      "mixed_preference_ratio": 0.877991452991453,
+      "sample_choose_orig_ratio": 0.4638888888888889
+    }
+  },
+  "meta": {
+    "oracle_type": "profile_only",
+    "head_a": "Selective2Hop_OriginalAgg",
+    "head_b": "Selective2Hop_Ours",
+    "top_k": 5,
+    "skipped_count": 0,
+    "candidate_records_csv": "/data/zkx/zkx/iknow-audio/37.oracle_profile/tut2017/candidate_records.csv",
+    "sample_records_csv": "/data/zkx/zkx/iknow-audio/37.oracle_profile/tut2017/sample_records.csv"
+  }
+}

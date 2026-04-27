@@ -1,0 +1,6 @@
+[RUN] TUT kappa=5
+[RUN] TUT kappa=5 gpu=1
+[RUN] TUT kappa=10 gpu=0
+[RUN] TUT kappa=20 gpu=2
+[RUN] TUT kappa=50 gpu=1
+[RUN] TUT kappa=100 gpu=0

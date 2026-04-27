@@ -1,0 +1,87 @@
+{
+  "completed": true,
+  "total_samples": 368,
+  "metrics": {
+    "Baseline": {
+      "Hit@1": 58.31062670299727,
+      "Hit@3": 84.19618528610354,
+      "Hit@5": 90.73569482288828,
+      "MRR": 72.66890390868592
+    },
+    "iKnow": {
+      "Hit@1": 61.30790190735694,
+      "Hit@3": 86.10354223433242,
+      "Hit@5": 90.46321525885558,
+      "MRR": 74.3809838360247
+    },
+    "Full2Hop": {
+      "Hit@1": 61.58038147138964,
+      "Hit@3": 84.74114441416893,
+      "Hit@5": 90.73569482288828,
+      "MRR": 74.38552516209192
+    },
+    "Ours": {
+      "Hit@1": 61.30790190735694,
+      "Hit@3": 85.28610354223434,
+      "Hit@5": 90.73569482288828,
+      "MRR": 74.38552516209192
+    },
+    "Selective2Hop_OriginalAgg": {
+      "Hit@1": 56.94822888283378,
+      "Hit@3": 79.56403269754769,
+      "Hit@5": 90.73569482288828,
+      "MRR": 70.35736894047521
+    },
+    "Selective2Hop_NoLLM": {
+      "Hit@1": 61.30790190735694,
+      "Hit@3": 86.92098092643052,
+      "Hit@5": 90.73569482288828,
+      "MRR": 74.78970318207377
+    },
+    "Ours_GraphProp": {
+      "Hit@1": 61.30790190735694,
+      "Hit@3": 85.28610354223434,
+      "Hit@5": 90.73569482288828,
+      "MRR": 74.38552516209192
+    }
+  },
+  "stats": {
+    "Baseline": {
+      "avg_prompts": 1.0,
+      "avg_time_ms": 13.233678542300856
+    },
+    "iKnow": {
+      "avg_prompts": 41.6267029972752,
+      "avg_time_ms": 388.24349917897734
+    },
+    "Full2Hop": {
+      "avg_prompts": 562.2234332425068,
+      "avg_time_ms": 5072.7856068260335
+    },
+    "Ours": {
+      "avg_prompts": 43.201634877384194,
+      "avg_time_ms": 408.6322849388019,
+      "hop2_activation_sample": 0.8147138964577657,
+      "hop2_activation_candidate": 0.3155313351498637
+    },
+    "Selective2Hop_OriginalAgg": {
+      "avg_prompts": 43.201634877384194,
+      "avg_time_ms": 407.32597979927584,
+      "hop2_activation_sample": 0.8147138964577657,
+      "hop2_activation_candidate": 0.3155313351498637
+    },
+    "Selective2Hop_NoLLM": {
+      "avg_prompts": 73.17983651226157,
+      "avg_time_ms": 677.9193436417332,
+      "hop2_activation_sample": 0.8910081743869209,
+      "hop2_activation_candidate": 0.35967302452316074
+    },
+    "Ours_GraphProp": {
+      "avg_prompts": 43.201634877384194,
+      "avg_time_ms": 405.5523027841012,
+      "hop2_activation_sample": 0.8147138964577657,
+      "hop2_activation_candidate": 0.3155313351498637,
+      "graph_lambda": 0.3
+    }
+  }
+}

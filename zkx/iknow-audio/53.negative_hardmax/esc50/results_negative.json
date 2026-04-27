@@ -1,0 +1,27 @@
+{
+  "module_path": "/data/zkx/zkx/iknow-audio/17_ablation/esc50/test_ablation.py",
+  "neg_lambda": 0.35,
+  "results": {
+    "Selective2Hop_OriginalAgg": {
+      "Hit@1": 85.25,
+      "Hit@3": 94.85,
+      "Hit@5": 97.65,
+      "MRR": 90.5029943101847,
+      "avg_prompts": 48.9055,
+      "avg_time_ms": 376.71976041793823,
+      "hop2_activation_sample": 0.387,
+      "hop2_activation_candidate": 0.0999
+    },
+    "NegativePrompt_HardMax": {
+      "Hit@1": 53.349999999999994,
+      "Hit@3": 82.65,
+      "Hit@5": 96.89999999999999,
+      "MRR": 69.68508756415297,
+      "avg_prompts": 48.9055,
+      "avg_time_ms": 153.0825709104538,
+      "hop2_activation_sample": 0.387,
+      "hop2_activation_candidate": 0.0999,
+      "avg_negative_prompts": 19.196
+    }
+  }
+}

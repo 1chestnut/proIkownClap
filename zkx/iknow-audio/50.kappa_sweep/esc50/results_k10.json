@@ -1,0 +1,48 @@
+{
+  "module_path": "/data/zkx/zkx/iknow-audio/16.综合/esc50/test.py",
+  "kappa": 10.0,
+  "results": {
+    "Baseline": {
+      "Hit@1": 91.10000000000001,
+      "Hit@3": 96.75,
+      "Hit@5": 97.65,
+      "MRR": 94.10549431018471,
+      "avg_prompts": 1.0,
+      "avg_time_ms": 12.314380645751953
+    },
+    "1-Hop_iKnow": {
+      "Hit@1": 93.25,
+      "Hit@3": 97.1,
+      "Hit@5": 97.5,
+      "MRR": 95.32478002447043,
+      "avg_prompts": 47.54,
+      "avg_time_ms": 3573.431667804718
+    },
+    "All_2Hop_iKnow_Eq": {
+      "Hit@1": 89.05,
+      "Hit@3": 95.7,
+      "Hit@5": 97.65,
+      "MRR": 92.74466097685138,
+      "avg_prompts": 398.284,
+      "avg_time_ms": 3573.431272625923
+    },
+    "All_2Hop_Ours_Eq": {
+      "Hit@1": 92.65,
+      "Hit@3": 96.95,
+      "Hit@5": 97.65,
+      "MRR": 95.00882764351805,
+      "avg_prompts": 0.0,
+      "avg_time_ms": 0.0
+    },
+    "Selective_Ours": {
+      "Hit@1": 92.45,
+      "Hit@3": 97.0,
+      "Hit@5": 97.65,
+      "MRR": 94.89632764351803,
+      "avg_prompts": 48.399,
+      "avg_time_ms": 3573.4315148591995,
+      "trigger_rate": 0.381,
+      "avg_alpha": 0.5535517170220614
+    }
+  }
+}

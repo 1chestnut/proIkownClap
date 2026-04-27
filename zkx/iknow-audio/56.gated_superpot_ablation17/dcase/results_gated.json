@@ -1,0 +1,77 @@
+{
+  "completed": true,
+  "total_samples": 368,
+  "config": {
+    "margin_tau": 0.1,
+    "peakiness_tau": 0.08,
+    "kappa_min": 5.0,
+    "kappa_max": 100.0
+  },
+  "metrics": {
+    "Baseline": {
+      "Hit@1": 57.49318801089919,
+      "Hit@3": 82.56130790190736,
+      "Hit@5": 89.10081743869209,
+      "MRR": 71.63027027468442
+    },
+    "iKnow": {
+      "Hit@1": 55.858310626703,
+      "Hit@3": 83.37874659400545,
+      "Hit@5": 89.10081743869209,
+      "MRR": 70.76255261541365
+    },
+    "Selective2Hop_OriginalAgg": {
+      "Hit@1": 52.58855585831063,
+      "Hit@3": 78.7465940054496,
+      "Hit@5": 89.10081743869209,
+      "MRR": 67.53853548812677
+    },
+    "Ours": {
+      "Hit@1": 60.76294277929155,
+      "Hit@3": 83.65122615803816,
+      "Hit@5": 89.10081743869209,
+      "MRR": 73.42409407123304
+    },
+    "Selective2Hop_GatedSuperPot": {
+      "Hit@1": 54.76839237057221,
+      "Hit@3": 80.10899182561307,
+      "Hit@5": 89.10081743869209,
+      "MRR": 69.01446645997054
+    }
+  },
+  "stats": {
+    "Baseline": {
+      "avg_prompts": 1.0,
+      "avg_time_ms": 10.103288073630683
+    },
+    "iKnow": {
+      "avg_prompts": 41.52861035422343,
+      "avg_time_ms": 334.15695756917427
+    },
+    "Selective2Hop_OriginalAgg": {
+      "avg_prompts": 43.20980926430518,
+      "avg_time_ms": 350.218230437193,
+      "hop2_activation_sample": 0.8010899182561307,
+      "hop2_activation_candidate": 0.3166212534059946
+    },
+    "Ours": {
+      "avg_prompts": 43.20980926430518,
+      "avg_time_ms": 347.9468146851667,
+      "hop2_activation_sample": 0.8010899182561307,
+      "hop2_activation_candidate": 0.3166212534059946
+    },
+    "Selective2Hop_GatedSuperPot": {
+      "avg_prompts": 43.20980926430518,
+      "avg_time_ms": 348.9980853545893,
+      "hop2_activation_sample": 0.8010899182561307,
+      "hop2_activation_candidate": 0.3166212534059946,
+      "superpot_trigger_ratio": 0.8283378746594006,
+      "peakiness_q25": 0.017349472641944884,
+      "peakiness_q50": 0.025506085157394408,
+      "peakiness_q75": 0.03561261147260666,
+      "margin_q25": 0.016351081430912018,
+      "margin_q50": 0.03586965799331665,
+      "margin_q75": 0.07293401658535004
+    }
+  }
+}

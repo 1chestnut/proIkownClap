@@ -1,0 +1,119 @@
+Target: esc50
+Variant: top2_gap_weighted_lr
+
+Method                 Hit@1   Hit@3   Hit@5    MRR
+----------------------------------------------------
+OriginalAgg             87.50   96.45   97.65   91.87
+Ours                    92.05   96.85   97.65   94.50
+OracleCandidate         93.85   97.20   97.65   95.54
+top2_gap_weighted_lr    91.45   96.90   97.65   94.19
+
+Diagnostics
+- variant_name: top2_gap_weighted_lr
+- train_rows_before: 56470
+- train_rows_after: 36459
+- router_candidate_keep_ratio: 0.6456348503630246
+- train_choose_orig_ratio: 0.37252804520145916
+- sample_weight_mean: 4.995113123793937
+- gap_impact_mean_train: 0.03507676099885643
+- gap_impact_gt_mean_train: 0.034684441120205224
+- gap_impact_non_gt_mean_train: 0.035302200058433784
+- strong_competitor_ratio_train: 0.5920623165747826
+- route_choose_orig_ratio: 0.1967
+- route_choose_orig_gt_ratio: 0.9119303635432667
+- route_choose_orig_non_gt_ratio: 0.023114204051199204
+- oracle_choose_orig_gt_ratio: 0.7619047619047619
+- oracle_choose_orig_non_gt_ratio: 0.021871504908661615
+- oracle_match_accuracy: 0.8415257569799449
+- true_candidate_match_accuracy: 0.7660010240655402
+- hard_negative_match_accuracy: 0.8886051707628471
+- router_candidate_ratio_test: 0.5086
+- true_gap_improved_vs_ours_ratio: 0.6968766001024066
+- true_gap_improved_vs_orig_ratio: 0.8463901689708141
+- oracle_gap_above_router_ratio: 0.22887864823348694
+- top1_changed_ratio: 0.011776753712237584
+- top1_corrected_vs_ours_ratio: 0.002560163850486431
+- top1_corrected_vs_orig_ratio: 0.04505888376856119
+- prob_low_ratio: 0.7587
+- prob_mid_ratio: 0.0872
+- prob_high_ratio: 0.1541
+- coef_mean:
+  - baseline_top1: -2.430006152982402
+  - baseline_margin: 1.2603237860846295
+  - entropy: 0.15511741096292278
+  - hop2_activation: -0.05914631242843278
+  - prompt_count_log1p: 0.19198711124562515
+  - base_score: 4.154264026356429
+  - orig_minus_base: 0.26075678136866626
+  - ours_minus_base: 0.7771473217243673
+  - orig_minus_ours: -0.25766179075799445
+  - base_rank: 0.40924797697418547
+  - orig_rank: -0.3280426077056084
+  - ours_rank: -0.207356183214276
+  - min_rank: 0.3101960239791432
+  - rank_gap: -0.18038545620873478
+- coef_abs_mean:
+  - baseline_top1: 2.430006152982402
+  - baseline_margin: 1.2603237860846295
+  - entropy: 0.15511741096292278
+  - hop2_activation: 0.05914631242843278
+  - prompt_count_log1p: 0.19198711124562515
+  - base_score: 4.154264026356429
+  - orig_minus_base: 0.26075678136866626
+  - ours_minus_base: 0.7771473217243673
+  - orig_minus_ours: 0.25766179075799445
+  - base_rank: 0.40924797697418547
+  - orig_rank: 0.3280426077056084
+  - ours_rank: 0.207356183214276
+  - min_rank: 0.3101960239791432
+  - rank_gap: 0.18038545620873478
+- scaler_mean:
+  - baseline_top1: 0.34146196853465827
+  - baseline_margin: 0.1042501177199048
+  - entropy: 0.9977270186233029
+  - hop2_activation: 0.19479415233550015
+  - prompt_count_log1p: 4.197893620506192
+  - base_score: 0.26810213688817336
+  - orig_minus_base: 0.17239717525965012
+  - ours_minus_base: 0.0882986183215966
+  - orig_minus_ours: 0.08409855693805347
+  - base_rank: 2.0358759154118324
+  - orig_rank: 2.0481088345813103
+  - ours_rank: 1.9767684248059465
+  - min_rank: 1.530239447050111
+  - rank_gap: 0.07134040977536411
+- scaler_scale:
+  - baseline_top1: 0.09091026484975598
+  - baseline_margin: 0.08361637802661967
+  - entropy: 0.0020690585514876875
+  - hop2_activation: 0.3960421575431006
+  - prompt_count_log1p: 0.3472493621698836
+  - base_score: 0.1208327388786949
+  - orig_minus_base: 0.09514508164201571
+  - ours_minus_base: 0.04791222680792172
+  - orig_minus_ours: 0.048222646644825895
+  - base_rank: 1.1077978917291929
+  - orig_rank: 1.127656718152258
+  - ours_rank: 1.0019499195247494
+  - min_rank: 0.5701896049281302
+  - rank_gap: 0.8989579467386146
+- router_margin_bucket_profile:
+  - (-0.0009866, 0.0783]: 0.39120188531029065
+  - (0.0783, 0.134]: 0.3795275590551181
+  - (0.134, 0.188]: 0.389937106918239
+  - (0.188, 0.376]: 0.38630999213217937
+- oracle_margin_bucket_profile:
+  - (-0.0009866, 0.0783]: 0.3692065985860173
+  - (0.0783, 0.134]: 0.33937007874015745
+  - (0.134, 0.188]: 0.3058176100628931
+  - (0.188, 0.376]: 0.2887490165224233
+- router_entropy_bucket_profile:
+  - (0.989, 0.997]: 0.40723270440251574
+  - (0.997, 0.998]: 0.3915094339622642
+  - (0.998, 0.999]: 0.37716535433070864
+  - (0.999, 1.0]: 0.3710691823899371
+- oracle_entropy_bucket_profile:
+  - (0.989, 0.997]: 0.3309748427672956
+  - (0.997, 0.998]: 0.3128930817610063
+  - (0.998, 0.999]: 0.3228346456692913
+  - (0.999, 1.0]: 0.33647798742138363
